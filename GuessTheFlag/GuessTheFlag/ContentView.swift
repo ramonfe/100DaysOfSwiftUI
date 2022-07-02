@@ -18,7 +18,7 @@ struct FlagImage: View{
             .shadow(radius: 5)
     }
 }
-//View Modifier
+//Custom Modifiers
 struct LargeFont: ViewModifier {
     func body(content: Content) -> some View {
         content
