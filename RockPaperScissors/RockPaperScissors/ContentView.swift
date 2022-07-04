@@ -13,19 +13,17 @@ struct ContentView: View {
     @State private var shouldWin = Bool.random()
     @State private var score = 0
     @State private var tries = 0
-    let toWin = ["rock","paper","scissor"]
-    let toLose = ["paper","scissor","rock"]
     @State private var showScore = false
     
     var body: some View {
         VStack{
             Spacer()
-            Text("Computer Choose").font(.title)
+            Text("Computer has played..").font(.title)
             Text(round[computerChoice])
                 .font(.system(size: 200))
-            //Spacer()
-            //play for mwin or lose
-            Text("You need to play to \(shouldWin ? "Win" : "Lose")")
+            //Code refactored with ternary operator
+            Text("Which one \(shouldWin ? "Wins?" : "Loses?")")
+                .foregroundColor(shouldWin ? .green : . red)
             //butons
             HStack{
                 ForEach(0..<3){c in
