@@ -30,40 +30,21 @@ struct ContentView: View {
                     DatePicker("Seleccione una hora", selection: $wakeUp, displayedComponents: .hourAndMinute)
                         .labelsHidden()
                 }
-//                VStack(alignment: .leading, spacing: 0){
-//                    Text("Cuando deseas despertar?")
-//                        .font(.headline)
-//                    DatePicker("Seleccione una hora", selection: $wakeUp, displayedComponents: .hourAndMinute)
-//                        .labelsHidden()
-//                }
                 Section("Cuanto deseas Dormir") {
                     Stepper("\(sleepAmount.formatted()) horas",value: $sleepAmount, in:4...12, step: 0.25)
                 }
-//                VStack(alignment: .leading, spacing: 0){
-//                    Text("Cuanto desea dormir?").font(.headline)
-//
-//                    Stepper("\(sleepAmount.formatted()) horas",value: $sleepAmount, in:4...12, step: 0.25)
-//                }
                 Section("Tazas de cafe al día"){
                     Picker("Número de tazas", selection: $coffeAmount) {
                         ForEach(0..<21){
                             Text($0==1 ?"\($0) taza" : "\($0) tazas")
                         }
                     }
-//                    Stepper(coffeAmount == 1 ? "1 taza":"\(coffeAmount) tazas", value: $coffeAmount, in: 1...20)
                 }
-//                VStack(alignment: .leading, spacing: 0){
-//                    Text("Tazas de cafe al dia").font(.headline)
-//                    Stepper(coffeAmount == 1 ? "1 taza":"\(coffeAmount) tazas", value: $coffeAmount, in: 0...20)
-//                }
                 Section("Tu hora de dormir es"){
                     Text(calculateBedtime).font(.largeTitle)
                 }
             }
             .navigationTitle("Descansa Mejor")
-//            .toolbar {
-//                Button("Calcular",action: calculateBedtime)
-//            }
             .alert(alertTitle, isPresented: $showingAlert) {
                 Button("OK"){}
             } message: {
