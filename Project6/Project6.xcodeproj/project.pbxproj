@@ -7,22 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		F6825434286161EE0038356E /* WeSplitApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6825433286161EE0038356E /* WeSplitApp.swift */; };
-		F6825436286161EE0038356E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6825435286161EE0038356E /* ContentView.swift */; };
-		F6825438286161F10038356E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F6825437286161F10038356E /* Assets.xcassets */; };
-		F682543B286161F10038356E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F682543A286161F10038356E /* Preview Assets.xcassets */; };
+		F6AE8D7A2877CD2200413B29 /* Project6App.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6AE8D792877CD2200413B29 /* Project6App.swift */; };
+		F6AE8D7C2877CD2200413B29 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6AE8D7B2877CD2200413B29 /* ContentView.swift */; };
+		F6AE8D7E2877CD2400413B29 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F6AE8D7D2877CD2400413B29 /* Assets.xcassets */; };
+		F6AE8D812877CD2400413B29 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F6AE8D802877CD2400413B29 /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		F6825430286161EE0038356E /* WeSplit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeSplit.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		F6825433286161EE0038356E /* WeSplitApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeSplitApp.swift; sourceTree = "<group>"; };
-		F6825435286161EE0038356E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		F6825437286161F10038356E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		F682543A286161F10038356E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		F6AE8D762877CD2200413B29 /* Project6.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Project6.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F6AE8D792877CD2200413B29 /* Project6App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Project6App.swift; sourceTree = "<group>"; };
+		F6AE8D7B2877CD2200413B29 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		F6AE8D7D2877CD2400413B29 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F6AE8D802877CD2400413B29 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		F682542D286161EE0038356E /* Frameworks */ = {
+		F6AE8D732877CD2200413B29 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -32,37 +32,37 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		F6825427286161EE0038356E = {
+		F6AE8D6D2877CD2200413B29 = {
 			isa = PBXGroup;
 			children = (
-				F6825432286161EE0038356E /* WeSplit */,
-				F6825431286161EE0038356E /* Products */,
+				F6AE8D782877CD2200413B29 /* Project6 */,
+				F6AE8D772877CD2200413B29 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		F6825431286161EE0038356E /* Products */ = {
+		F6AE8D772877CD2200413B29 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				F6825430286161EE0038356E /* WeSplit.app */,
+				F6AE8D762877CD2200413B29 /* Project6.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		F6825432286161EE0038356E /* WeSplit */ = {
+		F6AE8D782877CD2200413B29 /* Project6 */ = {
 			isa = PBXGroup;
 			children = (
-				F6825433286161EE0038356E /* WeSplitApp.swift */,
-				F6825435286161EE0038356E /* ContentView.swift */,
-				F6825437286161F10038356E /* Assets.xcassets */,
-				F6825439286161F10038356E /* Preview Content */,
+				F6AE8D792877CD2200413B29 /* Project6App.swift */,
+				F6AE8D7B2877CD2200413B29 /* ContentView.swift */,
+				F6AE8D7D2877CD2400413B29 /* Assets.xcassets */,
+				F6AE8D7F2877CD2400413B29 /* Preview Content */,
 			);
-			path = WeSplit;
+			path = Project6;
 			sourceTree = "<group>";
 		};
-		F6825439286161F10038356E /* Preview Content */ = {
+		F6AE8D7F2877CD2400413B29 /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
-				F682543A286161F10038356E /* Preview Assets.xcassets */,
+				F6AE8D802877CD2400413B29 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
 			sourceTree = "<group>";
@@ -70,39 +70,39 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		F682542F286161EE0038356E /* WeSplit */ = {
+		F6AE8D752877CD2200413B29 /* Project6 */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = F682543E286161F10038356E /* Build configuration list for PBXNativeTarget "WeSplit" */;
+			buildConfigurationList = F6AE8D842877CD2400413B29 /* Build configuration list for PBXNativeTarget "Project6" */;
 			buildPhases = (
-				F682542C286161EE0038356E /* Sources */,
-				F682542D286161EE0038356E /* Frameworks */,
-				F682542E286161EE0038356E /* Resources */,
+				F6AE8D722877CD2200413B29 /* Sources */,
+				F6AE8D732877CD2200413B29 /* Frameworks */,
+				F6AE8D742877CD2200413B29 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = WeSplit;
-			productName = WeSplit;
-			productReference = F6825430286161EE0038356E /* WeSplit.app */;
+			name = Project6;
+			productName = Project6;
+			productReference = F6AE8D762877CD2200413B29 /* Project6.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		F6825428286161EE0038356E /* Project object */ = {
+		F6AE8D6E2877CD2200413B29 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1340;
 				LastUpgradeCheck = 1340;
 				TargetAttributes = {
-					F682542F286161EE0038356E = {
+					F6AE8D752877CD2200413B29 = {
 						CreatedOnToolsVersion = 13.4;
 					};
 				};
 			};
-			buildConfigurationList = F682542B286161EE0038356E /* Build configuration list for PBXProject "WeSplit" */;
+			buildConfigurationList = F6AE8D712877CD2200413B29 /* Build configuration list for PBXProject "Project6" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -110,42 +110,42 @@
 				en,
 				Base,
 			);
-			mainGroup = F6825427286161EE0038356E;
-			productRefGroup = F6825431286161EE0038356E /* Products */;
+			mainGroup = F6AE8D6D2877CD2200413B29;
+			productRefGroup = F6AE8D772877CD2200413B29 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				F682542F286161EE0038356E /* WeSplit */,
+				F6AE8D752877CD2200413B29 /* Project6 */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		F682542E286161EE0038356E /* Resources */ = {
+		F6AE8D742877CD2200413B29 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F682543B286161F10038356E /* Preview Assets.xcassets in Resources */,
-				F6825438286161F10038356E /* Assets.xcassets in Resources */,
+				F6AE8D812877CD2400413B29 /* Preview Assets.xcassets in Resources */,
+				F6AE8D7E2877CD2400413B29 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		F682542C286161EE0038356E /* Sources */ = {
+		F6AE8D722877CD2200413B29 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F6825436286161EE0038356E /* ContentView.swift in Sources */,
-				F6825434286161EE0038356E /* WeSplitApp.swift in Sources */,
+				F6AE8D7C2877CD2200413B29 /* ContentView.swift in Sources */,
+				F6AE8D7A2877CD2200413B29 /* Project6App.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		F682543C286161F10038356E /* Debug */ = {
+		F6AE8D822877CD2400413B29 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -195,7 +195,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -205,7 +205,7 @@
 			};
 			name = Debug;
 		};
-		F682543D286161F10038356E /* Release */ = {
+		F6AE8D832877CD2400413B29 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -249,7 +249,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -259,15 +259,14 @@
 			};
 			name = Release;
 		};
-		F682543F286161F10038356E /* Debug */ = {
+		F6AE8D852877CD2400413B29 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"WeSplit/Preview Content\"";
-				DEVELOPMENT_TEAM = DD2C3FV6B6;
+				DEVELOPMENT_ASSET_PATHS = "\"Project6/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -280,7 +279,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.ramonfelix.WeSplit;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ramonfelix.Project6;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -288,15 +287,14 @@
 			};
 			name = Debug;
 		};
-		F6825440286161F10038356E /* Release */ = {
+		F6AE8D862877CD2400413B29 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"WeSplit/Preview Content\"";
-				DEVELOPMENT_TEAM = DD2C3FV6B6;
+				DEVELOPMENT_ASSET_PATHS = "\"Project6/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -309,7 +307,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.ramonfelix.WeSplit;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ramonfelix.Project6;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -320,25 +318,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		F682542B286161EE0038356E /* Build configuration list for PBXProject "WeSplit" */ = {
+		F6AE8D712877CD2200413B29 /* Build configuration list for PBXProject "Project6" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				F682543C286161F10038356E /* Debug */,
-				F682543D286161F10038356E /* Release */,
+				F6AE8D822877CD2400413B29 /* Debug */,
+				F6AE8D832877CD2400413B29 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		F682543E286161F10038356E /* Build configuration list for PBXNativeTarget "WeSplit" */ = {
+		F6AE8D842877CD2400413B29 /* Build configuration list for PBXNativeTarget "Project6" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				F682543F286161F10038356E /* Debug */,
-				F6825440286161F10038356E /* Release */,
+				F6AE8D852877CD2400413B29 /* Debug */,
+				F6AE8D862877CD2400413B29 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = F6825428286161EE0038356E /* Project object */;
+	rootObject = F6AE8D6E2877CD2200413B29 /* Project object */;
 }
