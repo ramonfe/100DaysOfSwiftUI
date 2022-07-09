@@ -26,35 +26,51 @@ extension View{
 struct ContentView: View {
     @State private var table = 2
     @State private var games = 5
+    @State private var gameInit = false
+    let arrNumbers = [2,3,4,5,6,7,8,9,10]
     var body: some View {
-        VStack{
-            Spacer()
-            Spacer()
-            HStack{
-                VStack{
-                    Text("Wich Times Table?").font(.headline)
-                    Text("\(table) X").font(.largeTitle).bold()
-                    Stepper("", value: $table,in: 2...12, step: 1)
-                        .labelsHidden()
+        ZStack
+        {
+            RadialGradient(stops: [
+                .init(color: Color(red:0.9,green: 0.5,blue: 2), location: 0.3),
+                .init(color: Color(red:0.5,green: 255,blue: 255), location: 0.3)
+            ],center: .top, startRadius: 200, endRadius: 500 )
+            .ignoresSafeArea()
+            VStack
+            {
+                Spacer()
+                Spacer()
+                HStack{
+                    VStack{
+                        Text("Wich Times Table?").font(.headline)
+                        Text("\(table) X").font(.largeTitle).bold()
+                        Stepper("", value: $table,in: 2...12, step: 1)
+                            .labelsHidden()
+                    }
+                    Spacer()
+                    VStack{
+                        Text("How Many Games?").font(.headline)
+                        Text("\(games) Games").font(.largeTitle).bold()
+                        Stepper("", value: $games,in: 5...20, step: 5)
+                            .labelsHidden()
+                    }
                 }
                 Spacer()
-                VStack{
-                    Text("How Many Games?").font(.headline)
-                    Text("\(games) Games").font(.largeTitle).bold()
-                    Stepper("", value: $games,in: 5...20, step: 5)
-                        .labelsHidden()
+                Button("Play"){
+                    gameInit = true
+                    
                 }
-            }
-            Spacer()
-            Button("Play"){}
                 .padding(50)
-                .background(.yellow)
+                .background(Color(red: 0.9, green: 0.5, blue: 2))
                 .clipShape(Circle())
+                .shadow(color: .gray, radius: 5)
                 .foregroundColor(.white)
                 .font(.system(size: 30, weight: .bold))
+                
                 Spacer()
+            }
+            .padding()
         }
-        .padding()
     }
 }
 
