@@ -12,6 +12,15 @@ struct CrewMember{
     let astronaut: Astronaut
 }
 
+struct MyRectangle:View{
+    var body: some View{
+        Rectangle()
+            .frame(height:2)
+            .foregroundColor(.lightBackground)
+            .padding(.vertical)
+    }
+}
+
 struct MissionView: View{
     let mission: Mission
     let crew: [CrewMember]
@@ -37,22 +46,19 @@ struct MissionView: View{
                         .scaledToFit()
                         .frame(maxWidth: geometry.size.width * 0.6)
                         .padding(.top)
-                    
+                    HStack{
+                        Text("Launch Date:")
+                        Text(mission.formattedLaunchDate)
+                    }
                     VStack(alignment: .leading){
-                        Rectangle()
-                            .frame(height:2)
-                            .foregroundColor(.lightBackground)
-                            .padding(.vertical)
+                        MyRectangle()
                         
                         Text("Mission Highlights")
                             .font(.title.bold())
                             .padding(.bottom,5)
                         Text(mission.description)
                         
-                        Rectangle()
-                            .frame(height:2)
-                            .foregroundColor(.lightBackground)
-                            .padding(.vertical)
+                        MyRectangle()
                         
                         Text("Crew")
                             .font(.title.bold())
