@@ -11,6 +11,7 @@ struct CheckoutView: View {
     @ObservedObject var order: Order
     @State private var confirmationMessage = ""
     @State private var showingConfirmation = false
+    @State private var alertTitle = ""
     
     var body: some View {
         ScrollView{
@@ -23,7 +24,7 @@ struct CheckoutView: View {
                     ProgressView()
                 }
                 .frame(height: 233)
-                Text("Your total is \(order.cost, format: .currency(code: "USD"))")
+                Text("Your total is \(order.item.cost, format: .currency(code: "USD"))")
                     .font(.title)
                 Button("Place order",action: {
                     Task{
@@ -35,7 +36,7 @@ struct CheckoutView: View {
         }
         .navigationTitle("Check out")
         .navigationBarTitleDisplayMode(.inline)
-        .alert("Thank you", isPresented: $showingConfirmation) {
+        .alert(alertTitle, isPresented: $showingConfirmation) {
             Button("OK"){}
         }message: {
             Text(confirmationMessage)
@@ -43,7 +44,7 @@ struct CheckoutView: View {
     }
     
     func placeOrder() async {
-        guard let encoded = try? JSONEncoder().encode(order) else{
+        guard let encoded = try? JSONEncoder().encode(order.item) else{
             print("failed to encode")
             return
         }
@@ -53,11 +54,14 @@ struct CheckoutView: View {
         request.httpMethod = "POST"
         do{
             let (data,_) = try await URLSession.shared.upload(for: request, from: encoded)
-            let decodedOrder = try JSONDecoder().decode(Order.self, from: data)
-            confirmationMessage = "You order for \(decodedOrder.quantity)x \(Order.types[decodedOrder.type].lowercased()) cupcakes is on the way"
+            let decodedOrder = try JSONDecoder().decode(CupcakeOrder.self, from: data)
+            confirmationMessage = "You order for \(decodedOrder.quantity)x \(CupcakeOrder.types[decodedOrder.type].lowercased()) cupcakes is on the way"
+            alertTitle = "Thank you"
             showingConfirmation =  true
         } catch{
-            print("checkout failed")
+            confirmationMessage = "Your Order Failed, please check your wifi and retry"
+            alertTitle = "Error"
+            showingConfirmation = true
         }
     }
 }
