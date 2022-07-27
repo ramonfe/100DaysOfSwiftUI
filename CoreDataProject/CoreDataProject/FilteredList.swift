@@ -8,6 +8,10 @@
 import CoreData
 import SwiftUI
 
+enum Predicated: String {
+    case beginsWith = "%K BEGINSWITH %@"
+}
+
 struct FilteredList<T: NSManagedObject, Content: View>: View {
     @FetchRequest var fetchedRequest: FetchedResults<T>
     let content: (T)-> Content
@@ -18,8 +22,8 @@ struct FilteredList<T: NSManagedObject, Content: View>: View {
         }
     }
     
-    init(filterKey: String, filterValue:String, @ViewBuilder content: @escaping (T) -> Content){
-        _fetchedRequest = FetchRequest<T>(sortDescriptors: [], predicate: NSPredicate(format: "%K BEGINSWITH %@", filterKey, filterValue))
+    init(filterKey: String, filterValue:String, filterParameter: Predicated,sortDesc:[SortDescriptor<T>], @ViewBuilder content: @escaping (T) -> Content){
+        _fetchedRequest = FetchRequest<T>(sortDescriptors: sortDesc, predicate: NSPredicate(format: filterParameter.rawValue, filterKey, filterValue))
         self.content = content
     }
 }
