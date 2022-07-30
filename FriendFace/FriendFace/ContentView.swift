@@ -8,35 +8,48 @@
 import SwiftUI
 
 struct User:Codable {
-    struct Friend:Codable {
+    struct Friend:Codable, Identifiable {
         var id:String
         var name:String
     }
     let id: String
-        let isActive: Bool
-        let name: String
-        let age: Int
-        let company, email, address, about: String
-        let registered: String
-        let tags: [String]
-        let friends: [Friend]
+    let isActive: Bool
+    let name: String
+    let age: Int
+    let company, email, address, about: String
+    let registered: Date
+    let tags: [String]
+    let friends: [Friend]
 }
-
 
 struct ContentView: View {
     @State private var users = [User]()
-    
+ 
     var body: some View {
-        List(users, id: \.id ){user in
-            VStack(alignment: .leading){
-                Text(user.name)
-                    .font(.headline)
-                Text("Age: \(String(user.age))")
-                Text("Email: \(user.email )")
+        NavigationView{
+            List(users, id: \.id ){user in
+                NavigationLink{
+                    DetailView(user: user)
+                } label: {
+                    HStack{
+                        Label("", systemImage: user.isActive ? "person.fill.checkmark" : "person.fill.xmark")
+                            .labelsHidden()
+                            .font(.largeTitle)
+                        VStack(alignment: .leading){
+                            Text(user.name)
+                                .font(.headline)
+                            Text("Company: \(user.company )")
+                                .foregroundColor(.secondary)
+                        }
+                    }
+                }
             }
+            .navigationTitle("Users")
         }
         .task {
-            await getJson()
+            if users.isEmpty{
+                await getJson()
+            }
         }
     }
     
@@ -44,13 +57,13 @@ struct ContentView: View {
         let url = URL(string: "https://www.hackingwithswift.com/samples/friendface.json")!
         do{
             let (data,_) = try await URLSession.shared.data(from: url)
-            if let dataAsString = String(data: data, encoding: .utf8){
-                print(dataAsString)
-            }
-            
+            //Uncomment for debug
+//            if let dataAsString = String(data: data, encoding: .utf8){
+//                print(dataAsString)
+//            }
             let decoder = JSONDecoder()
             decoder.dateDecodingStrategy = .iso8601
-            if let decodedUser =  try? JSONDecoder().decode([User].self, from: data)
+            if let decodedUser =  try? decoder.decode([User].self, from: data)
             {
                 users = decodedUser
             }
