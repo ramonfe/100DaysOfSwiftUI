@@ -13,7 +13,7 @@ struct CoreDataProjectApp: App {
     
     var body: some Scene {
         WindowGroup {
-            ContentView2()
+            ContentView()
                 .environment(\.managedObjectContext, dataController.container.viewContext)
         }
     }

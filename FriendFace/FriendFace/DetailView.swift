@@ -8,41 +8,41 @@
 import SwiftUI
 
 struct DetailView: View {
-    let user:User
+    let user:CdUser
+    @Environment(\.managedObjectContext)var moc
+    
     @State  private var friendsList=""
-    /*
-     let company, email, address, about: String
-     let registered: Date?
-     let tags: [String]
-     let friends: [Friend]
-     */
     
     var body: some View {
         VStack{
             Text("User").font(.headline)
                 .foregroundColor(.secondary)
-        Text(user.name)
+        Text(user.name!)
                 .font(.title)
             Form{
                 Section("User Information"){
                     Text("Age: \(user.age)")
-                    Text("Email: \(user.email)")
-                    Text("Registered: \(user.registered.formatted(date: .abbreviated, time: .omitted))")
-                    Text("Friends: \(friendArray(friends: user.friends))")
+                    Text("Email: \(user.email!)")
+                    Text("Registered: \(user.registered!.formatted(date: .abbreviated, time: .omitted))")
+                    //Text("Friend: \(user.friendArray.)")
+                    //Text("Friends: \(friendArray(friends: user.friendArray))")
+                    ForEach(user.friendArray,id:\.self){ amigo in
+                        Text(amigo.wrappedName)
+                    }
                 }
                 Section("Company Information"){
-                    Text("Name: \(user.company)")
-                    Text("Address: \(user.address)")
-                    Text("About: \(user.about)")
-                    Text("Tags: \(user.tags.joined(separator: ","))")
+                    Text("Name: \(user.company!)")
+                    Text("Address: \(user.address!)")
+                    Text("About: \(user.about!)")
+                    Text("Tags: \(user.tags!)")
                 }
             }
         }
     }
-    func friendArray(friends: [User.Friend]) -> String{
+    func friendArray(friends: [CdFriend]) -> String{
         var friendStr = ""
         for friend in friends {
-            friendStr.append(friend.name + ",")
+            friendStr.append(friend.wrappedName + ",")
         }
         friendStr = String(friendStr.dropLast())
         return friendStr

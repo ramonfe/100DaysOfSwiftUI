@@ -22,6 +22,9 @@ struct ContentView: View {
                     }
                 }
             }
+            Button("Delete Core Data"){
+                moc
+            }
             Button("Add Example"){
                 let candy1 = Candy(context: moc)
                 candy1.name="Mars"

@@ -8,6 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		F62E25E82894F01A00291491 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F62E25E72894F01A00291491 /* DetailView.swift */; };
+		F63A703C28973401000BF4BB /* UserModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F63A703A28973401000BF4BB /* UserModel.xcdatamodeld */; };
+		F63A704928973670000BF4BB /* CdFriend+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = F63A704528973670000BF4BB /* CdFriend+CoreDataClass.swift */; };
+		F63A704A28973670000BF4BB /* CdFriend+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = F63A704628973670000BF4BB /* CdFriend+CoreDataProperties.swift */; };
+		F63A704B28973670000BF4BB /* CdUser+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = F63A704728973670000BF4BB /* CdUser+CoreDataClass.swift */; };
+		F63A704C28973670000BF4BB /* CdUser+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = F63A704828973670000BF4BB /* CdUser+CoreDataProperties.swift */; };
+		F649D3E02895CE160057BB48 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = F649D3DF2895CE160057BB48 /* User.swift */; };
+		F649D3E32895CEDA0057BB48 /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F649D3E22895CEDA0057BB48 /* DataController.swift */; };
 		F6A6185D28937BAD000D0EE9 /* FriendFaceApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6A6185C28937BAD000D0EE9 /* FriendFaceApp.swift */; };
 		F6A6185F28937BAD000D0EE9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6A6185E28937BAD000D0EE9 /* ContentView.swift */; };
 		F6A6186128937BAF000D0EE9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F6A6186028937BAF000D0EE9 /* Assets.xcassets */; };
@@ -16,6 +23,13 @@
 
 /* Begin PBXFileReference section */
 		F62E25E72894F01A00291491 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		F63A703B28973401000BF4BB /* UserModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = UserModel.xcdatamodel; sourceTree = "<group>"; };
+		F63A704528973670000BF4BB /* CdFriend+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CdFriend+CoreDataClass.swift"; sourceTree = SOURCE_ROOT; };
+		F63A704628973670000BF4BB /* CdFriend+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CdFriend+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
+		F63A704728973670000BF4BB /* CdUser+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CdUser+CoreDataClass.swift"; sourceTree = SOURCE_ROOT; };
+		F63A704828973670000BF4BB /* CdUser+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CdUser+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
+		F649D3DF2895CE160057BB48 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		F649D3E22895CEDA0057BB48 /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
 		F6A6185928937BAD000D0EE9 /* FriendFace.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FriendFace.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F6A6185C28937BAD000D0EE9 /* FriendFaceApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendFaceApp.swift; sourceTree = "<group>"; };
 		F6A6185E28937BAD000D0EE9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -53,11 +67,18 @@
 		F6A6185B28937BAD000D0EE9 /* FriendFace */ = {
 			isa = PBXGroup;
 			children = (
+				F63A704528973670000BF4BB /* CdFriend+CoreDataClass.swift */,
+				F63A704628973670000BF4BB /* CdFriend+CoreDataProperties.swift */,
+				F63A704728973670000BF4BB /* CdUser+CoreDataClass.swift */,
+				F63A704828973670000BF4BB /* CdUser+CoreDataProperties.swift */,
 				F6A6185C28937BAD000D0EE9 /* FriendFaceApp.swift */,
 				F6A6185E28937BAD000D0EE9 /* ContentView.swift */,
 				F62E25E72894F01A00291491 /* DetailView.swift */,
+				F649D3E22895CEDA0057BB48 /* DataController.swift */,
+				F649D3DF2895CE160057BB48 /* User.swift */,
 				F6A6186028937BAF000D0EE9 /* Assets.xcassets */,
 				F6A6186228937BAF000D0EE9 /* Preview Content */,
+				F63A703A28973401000BF4BB /* UserModel.xcdatamodeld */,
 			);
 			path = FriendFace;
 			sourceTree = "<group>";
@@ -142,7 +163,14 @@
 			files = (
 				F6A6185F28937BAD000D0EE9 /* ContentView.swift in Sources */,
 				F62E25E82894F01A00291491 /* DetailView.swift in Sources */,
+				F63A704A28973670000BF4BB /* CdFriend+CoreDataProperties.swift in Sources */,
+				F63A704B28973670000BF4BB /* CdUser+CoreDataClass.swift in Sources */,
+				F63A704928973670000BF4BB /* CdFriend+CoreDataClass.swift in Sources */,
+				F63A703C28973401000BF4BB /* UserModel.xcdatamodeld in Sources */,
+				F649D3E32895CEDA0057BB48 /* DataController.swift in Sources */,
+				F649D3E02895CE160057BB48 /* User.swift in Sources */,
 				F6A6185D28937BAD000D0EE9 /* FriendFaceApp.swift in Sources */,
+				F63A704C28973670000BF4BB /* CdUser+CoreDataProperties.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -343,6 +371,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		F63A703A28973401000BF4BB /* UserModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				F63A703B28973401000BF4BB /* UserModel.xcdatamodel */,
+			);
+			currentVersion = F63A703B28973401000BF4BB /* UserModel.xcdatamodel */;
+			path = UserModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = F6A6185128937BAD000D0EE9 /* Project object */;
 }

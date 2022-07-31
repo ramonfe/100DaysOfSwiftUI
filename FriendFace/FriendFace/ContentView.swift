@@ -7,38 +7,27 @@
 
 import SwiftUI
 
-struct User:Codable {
-    struct Friend:Codable, Identifiable {
-        var id:String
-        var name:String
-    }
-    let id: String
-    let isActive: Bool
-    let name: String
-    let age: Int
-    let company, email, address, about: String
-    let registered: Date
-    let tags: [String]
-    let friends: [Friend]
-}
-
 struct ContentView: View {
+    @Environment(\.managedObjectContext)var moc
+    @FetchRequest(sortDescriptors: [])var cachedUser: FetchedResults<CdUser>
+    
     @State private var users = [User]()
  
     var body: some View {
         NavigationView{
-            List(users, id: \.id ){user in
+            List(cachedUser, id: \.self ){user in
                 NavigationLink{
                     DetailView(user: user)
+                    //Text(user.name!)
                 } label: {
                     HStack{
                         Label("", systemImage: user.isActive ? "person.fill.checkmark" : "person.fill.xmark")
                             .labelsHidden()
                             .font(.largeTitle)
                         VStack(alignment: .leading){
-                            Text(user.name)
+                            Text(user.name!)
                                 .font(.headline)
-                            Text("Company: \(user.company )")
+                            Text("Company: \(user.company! )")
                                 .foregroundColor(.secondary)
                         }
                     }
@@ -49,6 +38,10 @@ struct ContentView: View {
         .task {
             if users.isEmpty{
                 await getJson()
+                //to avoid update coredata in middle of updating user interface
+                await MainActor.run{
+                    addCachedUser(users: users)
+                }
             }
         }
     }
@@ -66,11 +59,39 @@ struct ContentView: View {
             if let decodedUser =  try? decoder.decode([User].self, from: data)
             {
                 users = decodedUser
+                
             }
             
             
         } catch let jsonError{
             print(jsonError)
+        }
+    }
+    func addCachedUser(users: [User]){
+        for user in users {
+            for friend in user.friends{
+                let friendCached = CdFriend(context: moc)
+                friendCached.id = friend.id
+                friendCached.name = friend.name
+                friendCached.origin = CdUser(context: moc)
+                friendCached.origin?.id = user.id
+                friendCached.origin?.isActive = user.isActive
+                friendCached.origin?.name = user.name
+                friendCached.origin?.age = Int16(user.age)
+                friendCached.origin?.company = user.company
+                friendCached.origin?.email = user.email
+                friendCached.origin?.address = user.email
+                friendCached.origin?.about = user.about
+                friendCached.origin?.registered = user.registered
+                friendCached.origin?.tags = user.tags.joined(separator: ",")
+                do{
+                    if moc.hasChanges{
+                        try moc.save()
+                    }
+                }catch let error{
+                    print("Adding CoreData Err: \(error.localizedDescription)")
+                }
+            }
         }
     }
 }
