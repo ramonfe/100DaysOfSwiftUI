@@ -59,10 +59,7 @@ struct ContentView: View {
             if let decodedUser =  try? decoder.decode([User].self, from: data)
             {
                 users = decodedUser
-                
-            }
-            
-            
+            }    
         } catch let jsonError{
             print(jsonError)
         }
@@ -83,7 +80,7 @@ struct ContentView: View {
                 friendCached.origin?.address = user.email
                 friendCached.origin?.about = user.about
                 friendCached.origin?.registered = user.registered
-                friendCached.origin?.tags = user.tags.joined(separator: ",")
+                friendCached.origin?.tags = user.tags.joined(separator: ", ")
                 do{
                     if moc.hasChanges{
                         try moc.save()

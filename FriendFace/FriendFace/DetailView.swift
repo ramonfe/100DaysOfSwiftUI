@@ -25,10 +25,10 @@ struct DetailView: View {
                     Text("Email: \(user.email!)")
                     Text("Registered: \(user.registered!.formatted(date: .abbreviated, time: .omitted))")
                     //Text("Friend: \(user.friendArray.)")
-                    //Text("Friends: \(friendArray(friends: user.friendArray))")
-                    ForEach(user.friendArray,id:\.self){ amigo in
-                        Text(amigo.wrappedName)
-                    }
+                    Text("Friends: \(friendArray(friends: user.friendArray))")
+//                    ForEach(user.friendArray,id:\.self){ amigo in
+//                        Text(amigo.wrappedName)
+//                    }
                 }
                 Section("Company Information"){
                     Text("Name: \(user.company!)")
