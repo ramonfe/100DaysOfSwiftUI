@@ -15,6 +15,7 @@ struct ContentView: View {
     
     @State private var showingImagePicture = false
     @State private var inputImage:UIImage?
+    @State private var processedImage:UIImage?
     
     @State private var currentFilter:CIFilter = CIFilter.sepiaTone()
     let context = CIContext()
@@ -84,7 +85,17 @@ struct ContentView: View {
     }
     
     func save(){
+        guard let processedImage = processedImage else {return}
+
+        let imageSaver = ImageSaver()
         
+        imageSaver.successHandler = {
+            print("Success!")
+        }
+        imageSaver.errorHandler = {
+            print("Error: \($0.localizedDescription)")
+        }
+        imageSaver.writeToPhotoAlbum(image: processedImage)
     }
     
     func applyProcessing(){
@@ -92,14 +103,15 @@ struct ContentView: View {
         
         if inputKeys.contains(kCIInputIntensityKey){currentFilter.setValue(filterIntensity, forKey: kCIInputIntensityKey)}
         if inputKeys.contains(kCIInputRadiusKey){currentFilter.setValue(filterIntensity * 200, forKey: kCIInputRadiusKey)}
-        if inputKeys.contains(kCIInputScaleKey){currentFilter.setValue(filterIntensity, forKey: kCIInputScaleKey)}
-        //currentFilter.intensity = Float(filterIntensity)      
+        if inputKeys.contains(kCIInputScaleKey){currentFilter.setValue(filterIntensity *  10, forKey: kCIInputScaleKey)}
+        //currentFilter.intensity = Float(filterIntensity)
         
         guard let outputImage = currentFilter.outputImage else {return}
         
         if let cgimage = context.createCGImage(outputImage, from: outputImage.extent){
             let uiImage = UIImage(cgImage: cgimage)
             image = Image(uiImage: uiImage)
+            processedImage = uiImage
         }
     }
     func setFilter(_ filter: CIFilter){
