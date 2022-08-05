@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F6652907289CCE2600CE48C7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6652906289CCE2600CE48C7 /* ContentView.swift */; };
 		F6981247289A2B14006CB645 /* WrapUIVController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6981246289A2B14006CB645 /* WrapUIVController.swift */; };
 		F6981249289A2D59006CB645 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6981248289A2D59006CB645 /* ImagePicker.swift */; };
 		F6D24067289B796E00CC1694 /* ImageSaver.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6D24066289B796E00CC1694 /* ImageSaver.swift */; };
@@ -19,6 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F6652906289CCE2600CE48C7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		F6981246289A2B14006CB645 /* WrapUIVController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WrapUIVController.swift; sourceTree = "<group>"; };
 		F6981248289A2D59006CB645 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
 		F6D24066289B796E00CC1694 /* ImageSaver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageSaver.swift; sourceTree = "<group>"; };
@@ -61,8 +63,11 @@
 		F6DC38C52898D6FD005D52BE /* Instafilter */ = {
 			isa = PBXGroup;
 			children = (
-				F6DC38D62898EBC5005D52BE /* Learning */,
+				F6D24066289B796E00CC1694 /* ImageSaver.swift */,
+				F6981248289A2D59006CB645 /* ImagePicker.swift */,
 				F6DC38C62898D6FD005D52BE /* InstafilterApp.swift */,
+				F6652906289CCE2600CE48C7 /* ContentView.swift */,
+				F6DC38D62898EBC5005D52BE /* Learning */,
 				F6DC38CA2898D6FE005D52BE /* Assets.xcassets */,
 				F6DC38CC2898D6FE005D52BE /* Preview Content */,
 			);
@@ -83,8 +88,6 @@
 				F6DC38C82898D6FD005D52BE /* OnChangeView.swift */,
 				F6DC38D72898EC1D005D52BE /* CoreImageView.swift */,
 				F6981246289A2B14006CB645 /* WrapUIVController.swift */,
-				F6D24066289B796E00CC1694 /* ImageSaver.swift */,
-				F6981248289A2D59006CB645 /* ImagePicker.swift */,
 				F6DC38D42898E8A3005D52BE /* ConfDialogView.swift */,
 			);
 			path = Learning;
@@ -162,6 +165,7 @@
 			files = (
 				F6DC38C92898D6FD005D52BE /* OnChangeView.swift in Sources */,
 				F6DC38D82898EC1D005D52BE /* CoreImageView.swift in Sources */,
+				F6652907289CCE2600CE48C7 /* ContentView.swift in Sources */,
 				F6DC38D52898E8A3005D52BE /* ConfDialogView.swift in Sources */,
 				F6D24067289B796E00CC1694 /* ImageSaver.swift in Sources */,
 				F6981249289A2D59006CB645 /* ImagePicker.swift in Sources */,
