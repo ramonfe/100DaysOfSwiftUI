@@ -16,6 +16,7 @@
 		F4BBC0E828A1C83000CD8464 /* BucketListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4BBC0E728A1C83000CD8464 /* BucketListView.swift */; };
 		F4BBC0EA28A1D48800CD8464 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4BBC0E928A1D48800CD8464 /* MapView.swift */; };
 		F4E2B40228A2E48300CDD140 /* EditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4E2B40128A2E48300CDD140 /* EditView.swift */; };
+		F4E2B40428A3138800CDD140 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4E2B40328A3138800CDD140 /* Result.swift */; };
 		F665A64F28A20372004E0E3F /* FaceIdView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F665A64E28A20372004E0E3F /* FaceIdView.swift */; };
 		F665A65128A20B51004E0E3F /* UserLocationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F665A65028A20B51004E0E3F /* UserLocationView.swift */; };
 		F665A65328A213EB004E0E3F /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = F665A65228A213EB004E0E3F /* Location.swift */; };
@@ -32,6 +33,7 @@
 		F4BBC0E728A1C83000CD8464 /* BucketListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BucketListView.swift; sourceTree = "<group>"; };
 		F4BBC0E928A1D48800CD8464 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		F4E2B40128A2E48300CDD140 /* EditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditView.swift; sourceTree = "<group>"; };
+		F4E2B40328A3138800CDD140 /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
 		F665A64E28A20372004E0E3F /* FaceIdView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaceIdView.swift; sourceTree = "<group>"; };
 		F665A65028A20B51004E0E3F /* UserLocationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserLocationView.swift; sourceTree = "<group>"; };
 		F665A65228A213EB004E0E3F /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
@@ -87,6 +89,7 @@
 			isa = PBXGroup;
 			children = (
 				F665A65228A213EB004E0E3F /* Location.swift */,
+				F4E2B40328A3138800CDD140 /* Result.swift */,
 				F4BBC0E328A180C700CD8464 /* DataToDocumentView.swift */,
 				F4BBC0D628A1769100CD8464 /* ComparableTypesView.swift */,
 				F4BBC0E728A1C83000CD8464 /* BucketListView.swift */,
@@ -179,6 +182,7 @@
 				F4BBC0E628A19C1900CD8464 /* FileManager-Decodable.swift in Sources */,
 				F4BBC0D528A1769100CD8464 /* BucketListApp.swift in Sources */,
 				F4BBC0E428A180C700CD8464 /* DataToDocumentView.swift in Sources */,
+				F4E2B40428A3138800CDD140 /* Result.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

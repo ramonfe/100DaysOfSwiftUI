@@ -19,7 +19,7 @@ struct Location: Identifiable, Codable, Equatable{
         CLLocationCoordinate2D(latitude: latitud, longitude: longitud)
     }
     
-    static let exmaple = Location(id: UUID(), name: "Buckin placa", description: "donde vice la reina con sus perrijos", latitud: 51.501, longitud: -0.141)
+    static let example = Location(id: UUID(), name: "Palacio de la Reyna", description: "donde vice la reyna con sus perrijos", latitud: 51.501, longitud: -0.141)
     
     static func ==(lhs: Location, rhs: Location) -> Bool{
         lhs.id == rhs.id
