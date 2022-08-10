@@ -16,6 +16,7 @@ extension UserLocationView{
         @Published private(set)  var locations: [Location]
         @Published var selectedPlace: Location?
         @Published var isUnlocked = false
+        @Published var authFailed = false
         
         let savePath = FileManager.documentsDirectory.appendingPathComponent("SavedPlaces")
         
@@ -57,11 +58,14 @@ extension UserLocationView{
                             self.isUnlocked = true
                         }
                     }else{
-                        //error
+                        Task {
+                            @MainActor in
+                            self.authFailed = true
+                        }
                     }
                 }
             }else{
-                //other error
+                self.authFailed = true
             }
         }
         

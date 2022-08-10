@@ -12,10 +12,9 @@ struct UserLocationView: View {
     @StateObject private var viewModel = ViewModel()
     
     var body: some View {
-        if viewModel.isUnlocked{
-            ZStack{
+        ZStack{
+            if viewModel.isUnlocked{
                 Map(coordinateRegion: $viewModel.mapRegion, annotationItems: viewModel.locations){location in
-                    //MapMarker(coordinate: CLLocationCoordinate2D(latitude: location.latitud, longitude: location.longitud))
                     MapAnnotation(coordinate: location.coordinate){
                         VStack{
                             Image(systemName: "star.circle")
@@ -48,30 +47,34 @@ struct UserLocationView: View {
                             viewModel.addLocation()
                         }label: {
                             Image(systemName: "plus")
+                                .padding()
+                                .background(.black.opacity(0.75))
+                                .foregroundColor(.white)
+                                .font(.title)
+                                .clipShape(Circle())
+                                .padding(.trailing)
                         }
-                        .padding()
-                        .background(.black.opacity(0.75))
-                        .foregroundColor(.white)
-                        .font(.title)
-                        .clipShape(Circle())
-                        .padding(.trailing)
                     }
                 }
             }
-            .sheet(item: $viewModel.selectedPlace) { place in
-                EditView(location: place) { newLocation in
-                    viewModel.update(location: newLocation)
+            else{
+                Button("Unlock Places"){
+                    viewModel.authenticate()
                 }
+                .padding()
+                .background(.blue)
+                .foregroundColor(.white)
+                .clipShape(Capsule())
             }
         }
-        else{
-            Button("Unlock Places"){
-                viewModel.authenticate()
+        .sheet(item: $viewModel.selectedPlace) { place in
+            EditView(location: place) { newLocation in
+                viewModel.update(location: newLocation)
             }
-            .padding()
-            .background(.blue)
-            .foregroundColor(.white)
-            .clipShape(Capsule())
+        }
+        .alert("Error", isPresented: $viewModel.authFailed){            
+        } message: {
+            	Text("Authentication failed.")
         }
     }
 }
