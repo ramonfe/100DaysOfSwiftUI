@@ -9,14 +9,11 @@ import MapKit
 import SwiftUI
 
 struct UserLocationView: View {
-    @State private var mapRegion = MKCoordinateRegion(center: CLLocationCoordinate2D(latitude: 50, longitude: 0), span: MKCoordinateSpan(latitudeDelta: 25, longitudeDelta: 25))
-    @State private var locations = [Location]()
-    
-    @State private var selectedPlace: Location?
+    @StateObject private var viewModel = ViewModel()
     
     var body: some View {
         ZStack{
-            Map(coordinateRegion: $mapRegion, annotationItems: locations){location in
+            Map(coordinateRegion: $viewModel.mapRegion, annotationItems: viewModel.locations){location in
                 //MapMarker(coordinate: CLLocationCoordinate2D(latitude: location.latitud, longitude: location.longitud))
                 MapAnnotation(coordinate: location.coordinate){
                     VStack{
@@ -31,11 +28,11 @@ struct UserLocationView: View {
                             .fixedSize()
                     }
                     .onTapGesture {
-                        selectedPlace = location
+                        viewModel.selectedPlace = location
                     }
                 }
             }
-                .ignoresSafeArea()
+            .ignoresSafeArea()
             
             Circle()
                 .fill(.blue)
@@ -47,8 +44,8 @@ struct UserLocationView: View {
                 HStack{
                     Spacer()
                     Button{
-                        let newLocation  = Location(id: UUID(), name: "New Location", description: "", latitud: mapRegion.center.latitude, longitud: mapRegion.center.longitude)
-                        locations.append(newLocation)
+                        let newLocation  = Location(id: UUID(), name: "New Location", description: "", latitud: viewModel.mapRegion.center.latitude, longitud: viewModel.mapRegion.center.longitude)
+                        viewModel.locations.append(newLocation)
                         
                     }label: {
                         Image(systemName: "plus")
@@ -62,10 +59,10 @@ struct UserLocationView: View {
                 }
             }
         }
-        .sheet(item: $selectedPlace) { place in
+        .sheet(item: $viewModel.selectedPlace) { place in
             EditView(location: place) { newLocation in
-                if let index = locations.firstIndex(of: place){
-                    locations[index] = newLocation
+                if let index = viewModel.locations.firstIndex(of: place){
+                    viewModel.locations[index] = newLocation
                 }
             }
         }
