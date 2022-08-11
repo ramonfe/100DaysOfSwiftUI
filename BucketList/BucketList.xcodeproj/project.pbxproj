@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		F478447A28A42F18007F7D9F /* FileManager-DocumentsDirectory.swift in Sources */ = {isa = PBXBuildFile; fileRef = F478447928A42F18007F7D9F /* FileManager-DocumentsDirectory.swift */; };
+		F478447C28A4783B007F7D9F /* EditView-ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F478447B28A4783B007F7D9F /* EditView-ViewModel.swift */; };
 		F4BBC0D528A1769100CD8464 /* BucketListApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4BBC0D428A1769100CD8464 /* BucketListApp.swift */; };
 		F4BBC0D728A1769100CD8464 /* ComparableTypesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4BBC0D628A1769100CD8464 /* ComparableTypesView.swift */; };
 		F4BBC0D928A1769400CD8464 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F4BBC0D828A1769400CD8464 /* Assets.xcassets */; };
@@ -26,6 +27,7 @@
 
 /* Begin PBXFileReference section */
 		F478447928A42F18007F7D9F /* FileManager-DocumentsDirectory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FileManager-DocumentsDirectory.swift"; sourceTree = "<group>"; };
+		F478447B28A4783B007F7D9F /* EditView-ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "EditView-ViewModel.swift"; sourceTree = "<group>"; };
 		F4BBC0D128A1769100CD8464 /* BucketList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BucketList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4BBC0D428A1769100CD8464 /* BucketListApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BucketListApp.swift; sourceTree = "<group>"; };
 		F4BBC0D628A1769100CD8464 /* ComparableTypesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComparableTypesView.swift; sourceTree = "<group>"; };
@@ -104,6 +106,7 @@
 				F665A65028A20B51004E0E3F /* UserLocationView.swift */,
 				F4E2B40528A3270700CDD140 /* UserLocationView-ViewModel.swift */,
 				F4E2B40128A2E48300CDD140 /* EditView.swift */,
+				F478447B28A4783B007F7D9F /* EditView-ViewModel.swift */,
 			);
 			path = Learning;
 			sourceTree = "<group>";
@@ -181,6 +184,7 @@
 				F4BBC0E828A1C83000CD8464 /* BucketListView.swift in Sources */,
 				F4E2B40628A3270700CDD140 /* UserLocationView-ViewModel.swift in Sources */,
 				F4BBC0EA28A1D48800CD8464 /* MapView.swift in Sources */,
+				F478447C28A4783B007F7D9F /* EditView-ViewModel.swift in Sources */,
 				F665A64F28A20372004E0E3F /* FaceIdView.swift in Sources */,
 				F4BBC0D728A1769100CD8464 /* ComparableTypesView.swift in Sources */,
 				F665A65328A213EB004E0E3F /* Location.swift in Sources */,
