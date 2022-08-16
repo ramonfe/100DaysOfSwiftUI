@@ -1,0 +1,71 @@
+[{
+        "title": "Make sandwich for lunch",
+        "details": {
+            "description": "I need to eat by 3:00pm",
+            "day": 1
+        }
+    },
+    {
+        "title": "Take kids to the doctor",
+        "details": {
+            "description": "They started with a high fever Yesterday. Little John was 38 and Melissa 38.5. Medicine helped a bit, but still they had a hard night. I wonder if playing at the park all day with this windy weather was a good idea. Hope Clara come backs soon from his trip to Lousiana, but wonder if it's a good idea to worry her and tell her about this situation.",
+            "day": 2
+        }
+    },
+    {
+        "title": "Fix bike",
+        "details": {
+            "description": "Need to buy screws, I might need a wrench too.",
+            "day": 3
+        }
+    },
+    {
+        "title": "Call plumber",
+        "details": {
+            "description": "555-78230",
+            "day": 5
+        }
+    },
+    {
+        "title": "Send email to manager",
+        "details": {
+            "description": "THIS IS URGENT!!! body: Proin id justo eu felis imperdiet porta vel in lectus. Praesent dolor lorem, maximus at odio in, tempor lacinia augue. Duis sollicitudin metus pellentesque augue convallis, ut porta erat lobortis. Proin congue quam nec facilisis vulputate. Vestibulum imperdiet, diam vel fermentum tempus, nunc felis varius nibh, ac tincidunt neque nisl id urna.",
+            "day": 1
+        }
+    },
+    {
+        "title": "Workout",
+        "details": {
+            "description": "I need to set up the alarm to a decent time.",
+            "day": 7
+        }
+    },
+    {
+        "title": "Finish Game Of Thrones Season 6",
+        "details": {
+            "description": "I hope season 7 is better man...",
+            "day": 6
+        }
+    },
+    {
+        "title": "Go to the movies with Caroll and Ames next Monday (@ The Marcus Mall probably)",
+        "details": {
+            "description": "We still have to decide which movie to see, but I think that steampunk western with girls in bikini might work for all of us",
+            "day": 4
+        }
+    },
+    {
+        "title": "Plan meals for the weekday",
+        "details": {
+            "description": "I'm going to find myself some time on Friday so I can make appropiate grocery shopping",
+            "day": 4
+        }
+    },
+    {
+        "title": "Complete homework for Japanese",
+        "details": {
+            "description": "These kanjis are getting harder and harder",
+            "day": 4
+        }
+    }
+]
