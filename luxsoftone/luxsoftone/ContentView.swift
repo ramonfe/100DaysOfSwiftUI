@@ -7,8 +7,8 @@
 
 import SwiftUI
 
-struct Todos: Codable, Identifiable {
-    let id:UUID
+struct Todos: Codable{
+    //var id = UUID()
     var title:String
     var details: Detail
 }
@@ -24,7 +24,7 @@ struct ContentView: View {
     var body: some View {
         VStack{
             List{
-            ForEach(data, id: \.self ){ todo in
+                ForEach(data ){ todo in
                 Text(todo.title)
                     .padding()
             }
@@ -37,7 +37,7 @@ struct ContentView: View {
     }
     
     func loadJSONData(filename: String) -> [Todos] {
-        var jsonRet: [Todos]
+        var jsonRet = [Todos]()
         guard let url = Bundle.main.url(forResource: filename, withExtension: "json") else {
             print("not found")
             return []
