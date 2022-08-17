@@ -8,7 +8,6 @@
 import SwiftUI
 
 struct Todos: Codable{
-    //var id = UUID()
     var title:String
     var details: Detail
 }
@@ -16,23 +15,46 @@ struct Todos: Codable{
 struct Detail:Codable {
     var description: String
     var day: Int
+    
+    var naturalDay:String{
+        switch day{
+        case 1:
+            return "Monday"
+        case 2:
+            return "Tuesday"
+        case 3:
+            return "Wenesday"
+        case 4:
+            return "Thursday"
+        case 5:
+            return "Friday"
+        case 6:
+            return "Saturday"
+        default:
+            return "Sunday"
+        }
+    }
 }
 
 struct ContentView: View {
     @State var data:[Todos] = []
     
     var body: some View {
-        VStack{
+        NavigationView{
             List{
-                ForEach(data ){ todo in
-                Text(todo.title)
-                    .padding()
+                ForEach(data, id: \.title ){ todo in
+                    Section{
+                        Text(todo.title)
+                            .font(.headline)
+                        Text(todo.details.description)
+                        Text("When: \(todo.details.naturalDay)").font(.footnote)
+                    }
+                }
             }
+            .navigationTitle("Todos")
             }
             .onAppear{
                 data = loadJSONData(filename: "JsonFile")
-                
-            }
         }
     }
     
