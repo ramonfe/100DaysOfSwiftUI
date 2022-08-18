@@ -7,34 +7,28 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		F6652907289CCE2600CE48C7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6652906289CCE2600CE48C7 /* ContentView.swift */; };
-		F6981247289A2B14006CB645 /* WrapUIVController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6981246289A2B14006CB645 /* WrapUIVController.swift */; };
-		F6981249289A2D59006CB645 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6981248289A2D59006CB645 /* ImagePicker.swift */; };
-		F6D24067289B796E00CC1694 /* ImageSaver.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6D24066289B796E00CC1694 /* ImageSaver.swift */; };
-		F6DC38C72898D6FD005D52BE /* InstafilterApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6DC38C62898D6FD005D52BE /* InstafilterApp.swift */; };
-		F6DC38C92898D6FD005D52BE /* OnChangeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6DC38C82898D6FD005D52BE /* OnChangeView.swift */; };
-		F6DC38CB2898D6FE005D52BE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F6DC38CA2898D6FE005D52BE /* Assets.xcassets */; };
-		F6DC38CE2898D6FE005D52BE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F6DC38CD2898D6FE005D52BE /* Preview Assets.xcassets */; };
-		F6DC38D52898E8A3005D52BE /* ConfDialogView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6DC38D42898E8A3005D52BE /* ConfDialogView.swift */; };
-		F6DC38D82898EC1D005D52BE /* CoreImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6DC38D72898EC1D005D52BE /* CoreImageView.swift */; };
+		F4D7022928AEC6C6009DB0CC /* ChallengeDay77App.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4D7022828AEC6C6009DB0CC /* ChallengeDay77App.swift */; };
+		F4D7022B28AEC6C6009DB0CC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4D7022A28AEC6C6009DB0CC /* ContentView.swift */; };
+		F4D7022D28AEC6C9009DB0CC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F4D7022C28AEC6C9009DB0CC /* Assets.xcassets */; };
+		F4D7023028AEC6C9009DB0CC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F4D7022F28AEC6C9009DB0CC /* Preview Assets.xcassets */; };
+		F4D7023928AEC88E009DB0CC /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4D7023828AEC88E009DB0CC /* ImagePicker.swift */; };
+		F4D7023B28AEED28009DB0CC /* SelectImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4D7023A28AEED28009DB0CC /* SelectImageView.swift */; };
+		F4D7023D28AEF39A009DB0CC /* ImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4D7023C28AEF39A009DB0CC /* ImageView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		F6652906289CCE2600CE48C7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		F6981246289A2B14006CB645 /* WrapUIVController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WrapUIVController.swift; sourceTree = "<group>"; };
-		F6981248289A2D59006CB645 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
-		F6D24066289B796E00CC1694 /* ImageSaver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageSaver.swift; sourceTree = "<group>"; };
-		F6DC38C32898D6FD005D52BE /* Instafilter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Instafilter.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		F6DC38C62898D6FD005D52BE /* InstafilterApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstafilterApp.swift; sourceTree = "<group>"; };
-		F6DC38C82898D6FD005D52BE /* OnChangeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnChangeView.swift; sourceTree = "<group>"; };
-		F6DC38CA2898D6FE005D52BE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		F6DC38CD2898D6FE005D52BE /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		F6DC38D42898E8A3005D52BE /* ConfDialogView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfDialogView.swift; sourceTree = "<group>"; };
-		F6DC38D72898EC1D005D52BE /* CoreImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreImageView.swift; sourceTree = "<group>"; };
+		F4D7022528AEC6C6009DB0CC /* ChallengeDay77.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChallengeDay77.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F4D7022828AEC6C6009DB0CC /* ChallengeDay77App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallengeDay77App.swift; sourceTree = "<group>"; };
+		F4D7022A28AEC6C6009DB0CC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		F4D7022C28AEC6C9009DB0CC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F4D7022F28AEC6C9009DB0CC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		F4D7023828AEC88E009DB0CC /* ImagePicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ImagePicker.swift; path = ../../Instafilter/Instafilter/ImagePicker.swift; sourceTree = "<group>"; };
+		F4D7023A28AEED28009DB0CC /* SelectImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectImageView.swift; sourceTree = "<group>"; };
+		F4D7023C28AEF39A009DB0CC /* ImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		F6DC38C02898D6FD005D52BE /* Frameworks */ = {
+		F4D7022228AEC6C6009DB0CC /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -44,91 +38,80 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		F6DC38BA2898D6FD005D52BE = {
+		F4D7021C28AEC6C6009DB0CC = {
 			isa = PBXGroup;
 			children = (
-				F6DC38C52898D6FD005D52BE /* Instafilter */,
-				F6DC38C42898D6FD005D52BE /* Products */,
+				F4D7022728AEC6C6009DB0CC /* ChallengeDay77 */,
+				F4D7022628AEC6C6009DB0CC /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		F6DC38C42898D6FD005D52BE /* Products */ = {
+		F4D7022628AEC6C6009DB0CC /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				F6DC38C32898D6FD005D52BE /* Instafilter.app */,
+				F4D7022528AEC6C6009DB0CC /* ChallengeDay77.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		F6DC38C52898D6FD005D52BE /* Instafilter */ = {
+		F4D7022728AEC6C6009DB0CC /* ChallengeDay77 */ = {
 			isa = PBXGroup;
 			children = (
-				F6DC38C62898D6FD005D52BE /* InstafilterApp.swift */,
-				F6652906289CCE2600CE48C7 /* ContentView.swift */,
-				F6981248289A2D59006CB645 /* ImagePicker.swift */,
-				F6D24066289B796E00CC1694 /* ImageSaver.swift */,
-				F6DC38D62898EBC5005D52BE /* Learning */,
-				F6DC38CA2898D6FE005D52BE /* Assets.xcassets */,
-				F6DC38CC2898D6FE005D52BE /* Preview Content */,
+				F4D7022828AEC6C6009DB0CC /* ChallengeDay77App.swift */,
+				F4D7022A28AEC6C6009DB0CC /* ContentView.swift */,
+				F4D7023C28AEF39A009DB0CC /* ImageView.swift */,
+				F4D7023A28AEED28009DB0CC /* SelectImageView.swift */,
+				F4D7023828AEC88E009DB0CC /* ImagePicker.swift */,
+				F4D7022C28AEC6C9009DB0CC /* Assets.xcassets */,
+				F4D7022E28AEC6C9009DB0CC /* Preview Content */,
 			);
-			path = Instafilter;
+			path = ChallengeDay77;
 			sourceTree = "<group>";
 		};
-		F6DC38CC2898D6FE005D52BE /* Preview Content */ = {
+		F4D7022E28AEC6C9009DB0CC /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
-				F6DC38CD2898D6FE005D52BE /* Preview Assets.xcassets */,
+				F4D7022F28AEC6C9009DB0CC /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
-			sourceTree = "<group>";
-		};
-		F6DC38D62898EBC5005D52BE /* Learning */ = {
-			isa = PBXGroup;
-			children = (
-				F6DC38C82898D6FD005D52BE /* OnChangeView.swift */,
-				F6DC38D72898EC1D005D52BE /* CoreImageView.swift */,
-				F6981246289A2B14006CB645 /* WrapUIVController.swift */,
-				F6DC38D42898E8A3005D52BE /* ConfDialogView.swift */,
-			);
-			path = Learning;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		F6DC38C22898D6FD005D52BE /* Instafilter */ = {
+		F4D7022428AEC6C6009DB0CC /* ChallengeDay77 */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = F6DC38D12898D6FE005D52BE /* Build configuration list for PBXNativeTarget "Instafilter" */;
+			buildConfigurationList = F4D7023328AEC6C9009DB0CC /* Build configuration list for PBXNativeTarget "ChallengeDay77" */;
 			buildPhases = (
-				F6DC38BF2898D6FD005D52BE /* Sources */,
-				F6DC38C02898D6FD005D52BE /* Frameworks */,
-				F6DC38C12898D6FD005D52BE /* Resources */,
+				F4D7022128AEC6C6009DB0CC /* Sources */,
+				F4D7022228AEC6C6009DB0CC /* Frameworks */,
+				F4D7022328AEC6C6009DB0CC /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = Instafilter;
-			productName = Instafilter;
-			productReference = F6DC38C32898D6FD005D52BE /* Instafilter.app */;
+			name = ChallengeDay77;
+			productName = ChallengeDay77;
+			productReference = F4D7022528AEC6C6009DB0CC /* ChallengeDay77.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		F6DC38BB2898D6FD005D52BE /* Project object */ = {
+		F4D7021D28AEC6C6009DB0CC /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1340;
 				LastUpgradeCheck = 1340;
 				TargetAttributes = {
-					F6DC38C22898D6FD005D52BE = {
-						CreatedOnToolsVersion = 13.4;
+					F4D7022428AEC6C6009DB0CC = {
+						CreatedOnToolsVersion = 13.4.1;
 					};
 				};
 			};
-			buildConfigurationList = F6DC38BE2898D6FD005D52BE /* Build configuration list for PBXProject "Instafilter" */;
+			buildConfigurationList = F4D7022028AEC6C6009DB0CC /* Build configuration list for PBXProject "ChallengeDay77" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -136,48 +119,45 @@
 				en,
 				Base,
 			);
-			mainGroup = F6DC38BA2898D6FD005D52BE;
-			productRefGroup = F6DC38C42898D6FD005D52BE /* Products */;
+			mainGroup = F4D7021C28AEC6C6009DB0CC;
+			productRefGroup = F4D7022628AEC6C6009DB0CC /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				F6DC38C22898D6FD005D52BE /* Instafilter */,
+				F4D7022428AEC6C6009DB0CC /* ChallengeDay77 */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		F6DC38C12898D6FD005D52BE /* Resources */ = {
+		F4D7022328AEC6C6009DB0CC /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F6DC38CE2898D6FE005D52BE /* Preview Assets.xcassets in Resources */,
-				F6DC38CB2898D6FE005D52BE /* Assets.xcassets in Resources */,
+				F4D7023028AEC6C9009DB0CC /* Preview Assets.xcassets in Resources */,
+				F4D7022D28AEC6C9009DB0CC /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		F6DC38BF2898D6FD005D52BE /* Sources */ = {
+		F4D7022128AEC6C6009DB0CC /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F6DC38C92898D6FD005D52BE /* OnChangeView.swift in Sources */,
-				F6DC38D82898EC1D005D52BE /* CoreImageView.swift in Sources */,
-				F6652907289CCE2600CE48C7 /* ContentView.swift in Sources */,
-				F6DC38D52898E8A3005D52BE /* ConfDialogView.swift in Sources */,
-				F6D24067289B796E00CC1694 /* ImageSaver.swift in Sources */,
-				F6981249289A2D59006CB645 /* ImagePicker.swift in Sources */,
-				F6DC38C72898D6FD005D52BE /* InstafilterApp.swift in Sources */,
-				F6981247289A2B14006CB645 /* WrapUIVController.swift in Sources */,
+				F4D7023D28AEF39A009DB0CC /* ImageView.swift in Sources */,
+				F4D7023928AEC88E009DB0CC /* ImagePicker.swift in Sources */,
+				F4D7022B28AEC6C6009DB0CC /* ContentView.swift in Sources */,
+				F4D7023B28AEED28009DB0CC /* SelectImageView.swift in Sources */,
+				F4D7022928AEC6C6009DB0CC /* ChallengeDay77App.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		F6DC38CF2898D6FE005D52BE /* Debug */ = {
+		F4D7023128AEC6C9009DB0CC /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -237,7 +217,7 @@
 			};
 			name = Debug;
 		};
-		F6DC38D02898D6FE005D52BE /* Release */ = {
+		F4D7023228AEC6C9009DB0CC /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -291,18 +271,17 @@
 			};
 			name = Release;
 		};
-		F6DC38D22898D6FE005D52BE /* Debug */ = {
+		F4D7023428AEC6C9009DB0CC /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Instafilter/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"ChallengeDay77/Preview Content\"";
 				DEVELOPMENT_TEAM = DD2C3FV6B6;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "We want to save the selected photo";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -313,7 +292,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.ramonfelix.Instafilter;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ramonfelix.ChallengeDay77;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -321,18 +300,17 @@
 			};
 			name = Debug;
 		};
-		F6DC38D32898D6FE005D52BE /* Release */ = {
+		F4D7023528AEC6C9009DB0CC /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Instafilter/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"ChallengeDay77/Preview Content\"";
 				DEVELOPMENT_TEAM = DD2C3FV6B6;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "We want to save the selected photo";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -343,7 +321,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.ramonfelix.Instafilter;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ramonfelix.ChallengeDay77;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -354,25 +332,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		F6DC38BE2898D6FD005D52BE /* Build configuration list for PBXProject "Instafilter" */ = {
+		F4D7022028AEC6C6009DB0CC /* Build configuration list for PBXProject "ChallengeDay77" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				F6DC38CF2898D6FE005D52BE /* Debug */,
-				F6DC38D02898D6FE005D52BE /* Release */,
+				F4D7023128AEC6C9009DB0CC /* Debug */,
+				F4D7023228AEC6C9009DB0CC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		F6DC38D12898D6FE005D52BE /* Build configuration list for PBXNativeTarget "Instafilter" */ = {
+		F4D7023328AEC6C9009DB0CC /* Build configuration list for PBXNativeTarget "ChallengeDay77" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				F6DC38D22898D6FE005D52BE /* Debug */,
-				F6DC38D32898D6FE005D52BE /* Release */,
+				F4D7023428AEC6C9009DB0CC /* Debug */,
+				F4D7023528AEC6C9009DB0CC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = F6DC38BB2898D6FD005D52BE /* Project object */;
+	rootObject = F4D7021D28AEC6C6009DB0CC /* Project object */;
 }

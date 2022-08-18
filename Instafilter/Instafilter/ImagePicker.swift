@@ -20,7 +20,7 @@ struct ImagePicker: UIViewControllerRepresentable {
             //exit if no selection is made
             guard let provider = results.first?.itemProvider else {return}
             
-            //if this has an ima ge we can user, use it
+            //if this has an image we can use it
             if provider.canLoadObject(ofClass: UIImage.self){
                 provider.loadObject(ofClass: UIImage.self) { image, _ in
                     self.parent.image = image as? UIImage
