@@ -49,6 +49,9 @@ struct MainView: View {
                         Spacer()
                         Text(item.amount, format: .currency(code: "USD"))
                     }
+                    .accessibilityElement()
+                    .accessibilityValue("Item: \(item.name.isEmpty ? "Unknown" : item.name ), Price is \(item.amount.formatted() ) US Dollar")
+                    .accessibilityHint("Type \(item.type)")
                 }
                 .onDelete(perform: removeItems)
             }

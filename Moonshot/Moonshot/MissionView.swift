@@ -46,10 +46,12 @@ struct MissionView: View{
                         .scaledToFit()
                         .frame(maxWidth: geometry.size.width * 0.6)
                         .padding(.top)
+                        .accessibilityHidden(true)
                     HStack{
-                        Text("Launch Date:")
+                        Text("Launch Date:")    
                         Text(mission.formattedLaunchDate)
                     }
+                    .accessibilityHidden(true)
                     VStack(alignment: .leading){
                         MyRectangle()
                         
@@ -64,6 +66,9 @@ struct MissionView: View{
                             .font(.title.bold())
                             .padding(.bottom,5)
                     }
+                    .accessibilityElement()
+                    .accessibilityValue("Mission Highlights")
+                    .accessibilityHint(mission.description)
                     .padding(.horizontal)
                     
                     ScrollView(.horizontal, showsIndicators: false) {

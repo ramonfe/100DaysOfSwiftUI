@@ -27,6 +27,7 @@ struct GridView: View {
                                 .scaledToFit()
                                 .frame(width: 100, height: 100)
                                 .padding()
+                                .accessibilityHidden(true)
                             VStack{
                                 Text(mission.displayName)
                                     .font(.headline)
@@ -35,6 +36,8 @@ struct GridView: View {
                                     .font(.caption)
                                     .foregroundColor(.white.opacity(0.5))
                             }
+                            .accessibilityElement()
+                            .accessibilityLabel("Mission: \(mission.displayName), Launch date: \(mission.formattedLaunchDate)")
                             .padding(.vertical)
                             .frame(maxWidth: .infinity)
                             .background(.lightBackground)

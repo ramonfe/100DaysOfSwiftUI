@@ -24,6 +24,7 @@ struct ListView: View {
                                 .scaledToFit()
                                 .frame(width: 100, height: 100)
                                 .padding()
+                                .accessibilityHidden(true)
                         //}
                         Spacer()
                         VStack{
@@ -38,6 +39,8 @@ struct ListView: View {
                         .frame(maxWidth: .infinity)
                         //.background(.lightBackground)
                     }
+                    .accessibilityElement()
+                    .accessibilityLabel("Mission: \(mission.displayName), Launch date: \(mission.formattedLaunchDate)")
                 }
             }
             .listRowBackground(Color.darkBackground)
