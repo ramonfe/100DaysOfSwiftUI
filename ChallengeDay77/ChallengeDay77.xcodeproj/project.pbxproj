@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F4CD6EC228B03BDD00BB1B91 /* UserImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4CD6EC128B03BDD00BB1B91 /* UserImage.swift */; };
+		F4CD6EC628B041EC00BB1B91 /* FileManager-DocDirectory.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4CD6EC528B041EC00BB1B91 /* FileManager-DocDirectory.swift */; };
+		F4CD6EC928B0538F00BB1B91 /* ContentView-ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4CD6EC828B0538F00BB1B91 /* ContentView-ViewModel.swift */; };
 		F4D7022928AEC6C6009DB0CC /* ChallengeDay77App.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4D7022828AEC6C6009DB0CC /* ChallengeDay77App.swift */; };
 		F4D7022B28AEC6C6009DB0CC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4D7022A28AEC6C6009DB0CC /* ContentView.swift */; };
 		F4D7022D28AEC6C9009DB0CC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F4D7022C28AEC6C9009DB0CC /* Assets.xcassets */; };
@@ -17,6 +20,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F4CD6EC128B03BDD00BB1B91 /* UserImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserImage.swift; sourceTree = "<group>"; };
+		F4CD6EC528B041EC00BB1B91 /* FileManager-DocDirectory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FileManager-DocDirectory.swift"; sourceTree = "<group>"; };
+		F4CD6EC828B0538F00BB1B91 /* ContentView-ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ContentView-ViewModel.swift"; sourceTree = "<group>"; };
 		F4D7022528AEC6C6009DB0CC /* ChallengeDay77.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChallengeDay77.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4D7022828AEC6C6009DB0CC /* ChallengeDay77App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallengeDay77App.swift; sourceTree = "<group>"; };
 		F4D7022A28AEC6C6009DB0CC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -38,6 +44,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F4CD6EC728B043A400BB1B91 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F4CD6EC128B03BDD00BB1B91 /* UserImage.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		F4D7021C28AEC6C6009DB0CC = {
 			isa = PBXGroup;
 			children = (
@@ -57,8 +71,11 @@
 		F4D7022728AEC6C6009DB0CC /* ChallengeDay77 */ = {
 			isa = PBXGroup;
 			children = (
+				F4CD6EC728B043A400BB1B91 /* Model */,
 				F4D7022828AEC6C6009DB0CC /* ChallengeDay77App.swift */,
 				F4D7022A28AEC6C6009DB0CC /* ContentView.swift */,
+				F4CD6EC828B0538F00BB1B91 /* ContentView-ViewModel.swift */,
+				F4CD6EC528B041EC00BB1B91 /* FileManager-DocDirectory.swift */,
 				F4D7023C28AEF39A009DB0CC /* ImageView.swift */,
 				F4D7023A28AEED28009DB0CC /* SelectImageView.swift */,
 				F4D7023828AEC88E009DB0CC /* ImagePicker.swift */,
@@ -148,7 +165,10 @@
 			files = (
 				F4D7023D28AEF39A009DB0CC /* ImageView.swift in Sources */,
 				F4D7023928AEC88E009DB0CC /* ImagePicker.swift in Sources */,
+				F4CD6EC228B03BDD00BB1B91 /* UserImage.swift in Sources */,
 				F4D7022B28AEC6C6009DB0CC /* ContentView.swift in Sources */,
+				F4CD6EC928B0538F00BB1B91 /* ContentView-ViewModel.swift in Sources */,
+				F4CD6EC628B041EC00BB1B91 /* FileManager-DocDirectory.swift in Sources */,
 				F4D7023B28AEED28009DB0CC /* SelectImageView.swift in Sources */,
 				F4D7022928AEC6C6009DB0CC /* ChallengeDay77App.swift in Sources */,
 			);

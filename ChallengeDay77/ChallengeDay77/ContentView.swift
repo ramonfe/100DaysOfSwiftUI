@@ -7,20 +7,21 @@
 
 import SwiftUI
 
-struct UserImages{
-    var name:String
-    var location:String
-}
-
 struct ContentView: View {
+    @StateObject private var viewModel = ViewModel()
+    @Environment(\.dismiss) var dismiss
+    
+    @State private var inputImage: UIImage?
+    @State private var imageSelected = false
+    
     @State private var showingAddImage = false
-    var userImages = [
-    UserImages(name: "Playa", location: "Unknown"),
-    UserImages(name: "Atardecer", location: "Unknown")
-    ]
+    @State private var imageName = ""
+    
+    var userImages = [UserImage.example]
+    
     var body: some View {
         NavigationView{
-            List(userImages,id: \.name){imagen in
+            List(userImages){imagen in
                 NavigationLink{
                     ImageView()
                 }label: {
@@ -41,7 +42,21 @@ struct ContentView: View {
             .navigationTitle("User Pictures")
         }
         .sheet(isPresented: $showingAddImage) {
-            SelectImageView()
+            ImagePicker(image: $inputImage)
+        }
+        .onChange(of: inputImage) { _ in
+            imageSelected = true
+        }
+        .sheet(isPresented: $imageSelected) {
+            VStack{
+                TextField("Enter an image name", text: $imageName)
+                Button("Save"){
+                    imageSelected.toggle()
+                    //mandar objeto como parametros y salvar con append
+                    //ver codigo de bucketlist
+                    viewModel.save()
+                }
+            }
         }
     }
 }
