@@ -12,7 +12,7 @@ struct UserImage:Identifiable, Codable, Comparable{
     var name:String
     var location:String
     
-    static let example = UserImage(id: UUID(), name: "Playa", location: "Unknown")
+    static let example = UserImage(id: UUID(), name: "Playa", location: "spongebob.jpg")
     
     static func < (lhs: UserImage, rhs: UserImage) -> Bool {
         lhs.name < rhs.name

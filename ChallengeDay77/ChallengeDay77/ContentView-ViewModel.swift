@@ -10,7 +10,7 @@ import UIKit
 
 extension ContentView{
     @MainActor class ViewModel: ObservableObject{
-        @Published private var userImages = [UserImage]()
+        @Published private(set) var userImages: [UserImage]
         
         let savePath = FileManager.documentsDirectory.appendingPathComponent("SavedImages")
         
@@ -30,6 +30,15 @@ extension ContentView{
             }catch{
                 print("unable to save data")
             }
+        }
+        func addImage(name: String, img: UIImage){
+            let saveImgPath = FileManager.documentsDirectory.appendingPathComponent("\(name).jpg")
+            if let jpegData = img.jpegData(compressionQuality: 0.8){
+                try? jpegData.write(to: saveImgPath, options: [.atomicWrite ])
+            }
+            let userImage = UserImage(id: UUID(), name: name, location: saveImgPath.absoluteString)
+            userImages.append(userImage)
+            save()
         }
     }
 }

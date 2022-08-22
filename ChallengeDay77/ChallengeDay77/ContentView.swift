@@ -16,23 +16,38 @@ struct ContentView: View {
     
     @State private var showingAddImage = false
     @State private var imageName = ""
+    private var hasImageName:Bool {
+        if imageName.isEmpty || imageName.trimmingCharacters(in: .whitespaces).isEmpty{
+            return false
+        }
+        return true
+    }
     
     var userImages = [UserImage.example]
     
     var body: some View {
         NavigationView{
-            List(userImages){imagen in
+            List(viewModel.userImages){imagen in
                 NavigationLink{
-                    ImageView()
+                    ImageView(userImage: imagen )
                 }label: {
                     HStack{
-                        Image(systemName: "photo")
+                        //Image(systemName: "photo")
+                        AsyncImage(url: URL(string: imagen.location), scale: 3 )
+                        {image in image
+                                .resizable()
+                                .scaledToFit()
+                                .frame(width: 100, height: 100)
+                        }placeholder: {
+                            ProgressView()
+                        }
                         Text(imagen.name)
                     }
                 }
             }
             .toolbar {
                 Button{
+                    imageName = ""
                     showingAddImage.toggle()
                 }label: {
                     Label("Add Image", systemImage: "plus")
@@ -48,15 +63,26 @@ struct ContentView: View {
             imageSelected = true
         }
         .sheet(isPresented: $imageSelected) {
-            VStack{
+            VStack(spacing:20){
                 TextField("Enter an image name", text: $imageName)
+                    .padding()
+                    .background(
+                        RoundedRectangle(cornerRadius: 8)
+                            .stroke(lineWidth: 1)
+                    )
                 Button("Save"){
+                    viewModel.addImage(name: imageName, img: inputImage!)
                     imageSelected.toggle()
-                    //mandar objeto como parametros y salvar con append
-                    //ver codigo de bucketlist
-                    viewModel.save()
                 }
+                .padding()
+                .background(
+                    RoundedRectangle(cornerRadius: 8)
+                        .stroke(lineWidth: 1)
+                )
+                .disabled(hasImageName == false)
+                Spacer()
             }
+            .padding()
         }
     }
 }
