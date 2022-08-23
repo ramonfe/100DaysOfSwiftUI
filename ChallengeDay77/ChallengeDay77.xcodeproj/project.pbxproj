@@ -50,7 +50,6 @@
 			isa = PBXGroup;
 			children = (
 				F4CD6EC128B03BDD00BB1B91 /* UserImage.swift */,
-				F405F97628B449DA005D60FE /* LocationFetcher.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -76,9 +75,10 @@
 			children = (
 				F4CD6EC728B043A400BB1B91 /* Model */,
 				F4D7022828AEC6C6009DB0CC /* ChallengeDay77App.swift */,
+				F4CD6EC528B041EC00BB1B91 /* FileManager-DocDirectory.swift */,
+				F405F97628B449DA005D60FE /* LocationFetcher.swift */,
 				F4D7022A28AEC6C6009DB0CC /* ContentView.swift */,
 				F4CD6EC828B0538F00BB1B91 /* ContentView-ViewModel.swift */,
-				F4CD6EC528B041EC00BB1B91 /* FileManager-DocDirectory.swift */,
 				F4D7023C28AEF39A009DB0CC /* ImageView.swift */,
 				F4D7023A28AEED28009DB0CC /* SelectImageView.swift */,
 				F4D7023828AEC88E009DB0CC /* ImagePicker.swift */,

@@ -10,35 +10,30 @@ import MapKit
 
 struct ImageView: View { 
     let userImage: UserImage
-    @State private var mapRegion = MKCoordinateRegion(center: CLLocationCoordinate2D(latitude: 50, longitude: 0), span: MKCoordinateSpan(latitudeDelta: 25, longitudeDelta: 25))
+    @State private var mapRegion = MKCoordinateRegion(center: CLLocationCoordinate2D(latitude: 32.525, longitude: -117.03), span: MKCoordinateSpan(latitudeDelta: 0.5, longitudeDelta: 0.5))
     
     @State private var image: Image?
+    
     var body: some View {
         NavigationView {
-            VStack{
+            VStack(alignment: .leading, spacing: 0)
+            {
                 image?
                     .resizable()
                     .scaledToFit()
-                    Spacer()
-                Map(coordinateRegion: $mapRegion)
-//                , annotationItems: userImage) { location in
-//                    MapAnnotation(coordinate: location.coordinate) {
-//                        VStack{
-//                            Image(systemName: "star.cricle")
-//                                .resizable()
-//                                .foregroundColor(.red)
-//                                .frame(width: 44, height: 44)
-//                                .background(.white)
-//                                .clipShape(Circle())
-//
-//                            Text(location.name)
-//                                .fixedSize()
-//                        }
-//                    }
-//                }
+                    
+                  Text("Taked at:")
+                    .font(.subheadline)
+                    .padding([.top, .bottom])
+                Map(coordinateRegion: $mapRegion, interactionModes: .all, //showsUserLocation: true,
+                 annotationItems: [userImage]) { location in
+                    MapMarker(coordinate: location.coordinate)
+                }
             }
+            .padding()
+            .navigationTitle(userImage.name)
+            //.navigationBarTitleDisplayMode(.inline)
             .onAppear(perform: loadImage)
-            .navigationTitle(userImage.name )
         }
     }
     func loadImage(){

@@ -8,16 +8,16 @@
 import SwiftUI
 
 struct ContentView: View {
-    let locationFetcher = LocationFetcher()
     
-    @StateObject private var viewModel = ViewModel()
-    @Environment(\.dismiss) var dismiss
+    
+    @StateObject private var viewModel = ViewModel()   
     
     @State private var inputImage: UIImage?
     @State private var imageSelected = false
     
     @State private var showingAddImage = false
     @State private var imageName = ""
+    
     private var hasImageName:Bool {
         if imageName.isEmpty || imageName.trimmingCharacters(in: .whitespaces).isEmpty{
             return false
@@ -48,16 +48,16 @@ struct ContentView: View {
                         }
                     }
                 }
-                Button("Star tracking location"){
-                    self.locationFetcher.start()
-                }
-                Button("Read location"){
-                    if let location =  self.locationFetcher.lastKnownLocation{
-                        print("your location is \(location)")
-                    }else{
-                        print("location unknown")
-                    }
-                }
+//                Button("Star tracking location"){
+//                    self.locationFetcher.start()
+//                }
+//                Button("Read location"){
+//                    if let location =  self.locationFetcher.lastKnownLocation{
+//                        print("your location is \(location)")
+//                    }else{
+//                        print("location unknown")
+//                    }
+//                }
             }
             .toolbar {
                 Button{
