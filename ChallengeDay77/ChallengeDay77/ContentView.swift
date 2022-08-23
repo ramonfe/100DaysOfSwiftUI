@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct ContentView: View {
+    let locationFetcher = LocationFetcher()
+    
     @StateObject private var viewModel = ViewModel()
     @Environment(\.dismiss) var dismiss
     
@@ -27,21 +29,33 @@ struct ContentView: View {
     
     var body: some View {
         NavigationView{
-            List(viewModel.userImages){imagen in
-                NavigationLink{
-                    ImageView(userImage: imagen )
-                }label: {
-                    HStack{
-                        //Image(systemName: "photo")
-                        AsyncImage(url: URL(string: imagen.location), scale: 3 )
-                        {image in image
-                                .resizable()
-                                .scaledToFit()
-                                .frame(width: 100, height: 100)
-                        }placeholder: {
-                            ProgressView()
+            VStack{
+                List(viewModel.userImages){imagen in
+                    NavigationLink{
+                        ImageView(userImage: imagen )
+                    }label: {
+                        HStack{
+                            //Image(systemName: "photo")
+                            AsyncImage(url: URL(string: imagen.location), scale: 3 )
+                            {image in image
+                                    .resizable()
+                                    .scaledToFit()
+                                    .frame(width: 100, height: 100)
+                            }placeholder: {
+                                ProgressView()
+                            }
+                            Text(imagen.name)
                         }
-                        Text(imagen.name)
+                    }
+                }
+                Button("Star tracking location"){
+                    self.locationFetcher.start()
+                }
+                Button("Read location"){
+                    if let location =  self.locationFetcher.lastKnownLocation{
+                        print("your location is \(location)")
+                    }else{
+                        print("location unknown")
                     }
                 }
             }

@@ -36,7 +36,7 @@ extension ContentView{
             if let jpegData = img.jpegData(compressionQuality: 0.8){
                 try? jpegData.write(to: saveImgPath, options: [.atomicWrite ])
             }
-            let userImage = UserImage(id: UUID(), name: name, location: saveImgPath.absoluteString)
+            let userImage = UserImage(id: UUID(), name: name, location: saveImgPath.absoluteString, latitud: 32.525, longitud: -117.03)
             userImages.append(userImage)
             save()
         }

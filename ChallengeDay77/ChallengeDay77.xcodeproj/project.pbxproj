@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F405F97728B449DA005D60FE /* LocationFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = F405F97628B449DA005D60FE /* LocationFetcher.swift */; };
 		F4CD6EC228B03BDD00BB1B91 /* UserImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4CD6EC128B03BDD00BB1B91 /* UserImage.swift */; };
 		F4CD6EC628B041EC00BB1B91 /* FileManager-DocDirectory.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4CD6EC528B041EC00BB1B91 /* FileManager-DocDirectory.swift */; };
 		F4CD6EC928B0538F00BB1B91 /* ContentView-ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4CD6EC828B0538F00BB1B91 /* ContentView-ViewModel.swift */; };
@@ -20,6 +21,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F405F97628B449DA005D60FE /* LocationFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationFetcher.swift; sourceTree = "<group>"; };
 		F4CD6EC128B03BDD00BB1B91 /* UserImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserImage.swift; sourceTree = "<group>"; };
 		F4CD6EC528B041EC00BB1B91 /* FileManager-DocDirectory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FileManager-DocDirectory.swift"; sourceTree = "<group>"; };
 		F4CD6EC828B0538F00BB1B91 /* ContentView-ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ContentView-ViewModel.swift"; sourceTree = "<group>"; };
@@ -48,6 +50,7 @@
 			isa = PBXGroup;
 			children = (
 				F4CD6EC128B03BDD00BB1B91 /* UserImage.swift */,
+				F405F97628B449DA005D60FE /* LocationFetcher.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -171,6 +174,7 @@
 				F4CD6EC628B041EC00BB1B91 /* FileManager-DocDirectory.swift in Sources */,
 				F4D7023B28AEED28009DB0CC /* SelectImageView.swift in Sources */,
 				F4D7022928AEC6C6009DB0CC /* ChallengeDay77App.swift in Sources */,
+				F405F97728B449DA005D60FE /* LocationFetcher.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -302,6 +306,7 @@
 				DEVELOPMENT_TEAM = DD2C3FV6B6;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "We need your location to save where the picture was taken";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -331,6 +336,7 @@
 				DEVELOPMENT_TEAM = DD2C3FV6B6;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "We need your location to save where the picture was taken";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
