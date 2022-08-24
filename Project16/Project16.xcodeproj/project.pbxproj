@@ -13,6 +13,7 @@
 		F47C526F28B5992F0050A7A5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F47C526E28B5992F0050A7A5 /* Preview Assets.xcassets */; };
 		F47C527628B59AAF0050A7A5 /* ProspectsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F47C527528B59AAF0050A7A5 /* ProspectsView.swift */; };
 		F47C527828B59ABB0050A7A5 /* MeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F47C527728B59ABB0050A7A5 /* MeView.swift */; };
+		F6BCCB7128B5CF1C009B0527 /* Prospect.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6BCCB7028B5CF1C009B0527 /* Prospect.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +24,7 @@
 		F47C526E28B5992F0050A7A5 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		F47C527528B59AAF0050A7A5 /* ProspectsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProspectsView.swift; sourceTree = "<group>"; };
 		F47C527728B59ABB0050A7A5 /* MeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeView.swift; sourceTree = "<group>"; };
+		F6BCCB7028B5CF1C009B0527 /* Prospect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Prospect.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +59,7 @@
 			children = (
 				F47C526728B5992D0050A7A5 /* Project16App.swift */,
 				F47C526928B5992D0050A7A5 /* ContentView.swift */,
+				F6BCCB7028B5CF1C009B0527 /* Prospect.swift */,
 				F47C527528B59AAF0050A7A5 /* ProspectsView.swift */,
 				F47C527728B59ABB0050A7A5 /* MeView.swift */,
 				F47C526B28B5992F0050A7A5 /* Assets.xcassets */,
@@ -144,6 +147,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F47C527828B59ABB0050A7A5 /* MeView.swift in Sources */,
+				F6BCCB7128B5CF1C009B0527 /* Prospect.swift in Sources */,
 				F47C527628B59AAF0050A7A5 /* ProspectsView.swift in Sources */,
 				F47C526A28B5992D0050A7A5 /* ContentView.swift in Sources */,
 				F47C526828B5992D0050A7A5 /* Project16App.swift in Sources */,
