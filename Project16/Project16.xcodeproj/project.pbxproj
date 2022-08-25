@@ -16,6 +16,7 @@
 		F4C0C04828B6B8990096ADFF /* CodeScanner in Frameworks */ = {isa = PBXBuildFile; productRef = F4C0C04728B6B8990096ADFF /* CodeScanner */; };
 		F4C0C04A28B6E4A30096ADFF /* ImageSaver.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C0C04928B6E4A30096ADFF /* ImageSaver.swift */; };
 		F6BCCB7128B5CF1C009B0527 /* Prospect.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6BCCB7028B5CF1C009B0527 /* Prospect.swift */; };
+		F6C5624D28B7297600B6FDC2 /* FileManager-DocumentsDirectory.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6C5624C28B7297600B6FDC2 /* FileManager-DocumentsDirectory.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		F47C527728B59ABB0050A7A5 /* MeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeView.swift; sourceTree = "<group>"; };
 		F4C0C04928B6E4A30096ADFF /* ImageSaver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ImageSaver.swift; path = ../../Instafilter/Instafilter/ImageSaver.swift; sourceTree = "<group>"; };
 		F6BCCB7028B5CF1C009B0527 /* Prospect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Prospect.swift; sourceTree = "<group>"; };
+		F6C5624C28B7297600B6FDC2 /* FileManager-DocumentsDirectory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "FileManager-DocumentsDirectory.swift"; path = "../../BucketList/BucketList/Learning/FileManager-DocumentsDirectory.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +67,7 @@
 				F47C526928B5992D0050A7A5 /* ContentView.swift */,
 				F6BCCB7028B5CF1C009B0527 /* Prospect.swift */,
 				F47C527528B59AAF0050A7A5 /* ProspectsView.swift */,
+				F6C5624C28B7297600B6FDC2 /* FileManager-DocumentsDirectory.swift */,
 				F47C527728B59ABB0050A7A5 /* MeView.swift */,
 				F4C0C04928B6E4A30096ADFF /* ImageSaver.swift */,
 				F47C526B28B5992F0050A7A5 /* Assets.xcassets */,
@@ -158,6 +161,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F47C527828B59ABB0050A7A5 /* MeView.swift in Sources */,
+				F6C5624D28B7297600B6FDC2 /* FileManager-DocumentsDirectory.swift in Sources */,
 				F4C0C04A28B6E4A30096ADFF /* ImageSaver.swift in Sources */,
 				F6BCCB7128B5CF1C009B0527 /* Prospect.swift in Sources */,
 				F47C527628B59AAF0050A7A5 /* ProspectsView.swift in Sources */,

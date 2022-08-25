@@ -15,6 +15,8 @@ struct ProspectsView: View {
     }
     @EnvironmentObject var prospects: Prospects
     @State private var isShowingScanner = false
+    @State private var showSort = false
+    @State private var sortBy = 0
     
     let filter: FilterType
     
@@ -22,11 +24,23 @@ struct ProspectsView: View {
         NavigationView{
             List{
                 ForEach(filteredProspects){ prospect in
-                    VStack(alignment: .leading){
-                        Text(prospect.name)
-                            .font(.headline)
-                        Text(prospect.emailAddress)
-                            .foregroundColor(.secondary)
+                    HStack{
+                        if filter == .none{
+                            if prospect.isContacted{
+                                Image(systemName: "person.crop.circle.fill.badge.checkmark")
+                                    .foregroundColor(.green)
+                            }
+                            else{
+                                Image(systemName: "person.crop.circle.badge.xmark")
+                                    .foregroundColor(.blue)
+                            }
+                        }
+                        VStack(alignment: .leading){
+                            Text(prospect.name)
+                                .font(.headline)
+                            Text(prospect.emailAddress)
+                                .foregroundColor(.secondary)
+                        }
                     }
                     .swipeActions {
                         if prospect.isContacted{
@@ -56,14 +70,27 @@ struct ProspectsView: View {
             }
             .navigationTitle(title)
             .toolbar {
-                Button{
-                    isShowingScanner = true
-                }label: {
-                    Label("Scan", systemImage: "qrcode.viewfinder")
+                ToolbarItem(placement: .navigationBarTrailing  ){
+                    Button{
+                        isShowingScanner = true
+                    }label: {
+                        Label("Scan", systemImage: "qrcode.viewfinder")
+                    }
+                }
+                ToolbarItem(placement: .navigationBarLeading ){
+                    Button{
+                        showSort = true
+                    }label: {
+                        Label("Sort", systemImage: "arrow.up.arrow.down.square")
+                    }
                 }
             }
             .sheet(isPresented: $isShowingScanner) {
-                CodeScannerView(codeTypes: [.qr], simulatedData: "ramon felix\nramonfe@gmail.com", completion: handleScan)
+                CodeScannerView(codeTypes: [.qr], simulatedData: "tadeo felix\nramonfe@gmail.com", completion: handleScan)
+            }
+            .confirmationDialog("Sort by", isPresented: $showSort) {
+                Button("Sort by Name"){prospects.sort(1)}
+                Button("Sort by Most Recent"){prospects.sort(2)}
             }
         }
     }
