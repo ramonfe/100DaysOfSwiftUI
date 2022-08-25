@@ -13,6 +13,9 @@
 		F4665F7E28B7EFFF00EF7648 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F4665F7D28B7EFFF00EF7648 /* Preview Assets.xcassets */; };
 		F4665F8528B7F98D00EF7648 /* CircleGesture.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4665F8428B7F98D00EF7648 /* CircleGesture.swift */; };
 		F4665F8728B824FA00EF7648 /* HapticsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4665F8628B824FA00EF7648 /* HapticsView.swift */; };
+		F4665F8B28B83A5600EF7648 /* TimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4665F8A28B83A5600EF7648 /* TimerView.swift */; };
+		F4665F8D28B83E8A00EF7648 /* SceneView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4665F8C28B83E8A00EF7648 /* SceneView.swift */; };
+		F4665F8F28B8409C00EF7648 /* AccessibilityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4665F8E28B8409C00EF7648 /* AccessibilityView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +26,9 @@
 		F4665F7D28B7EFFF00EF7648 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		F4665F8428B7F98D00EF7648 /* CircleGesture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleGesture.swift; sourceTree = "<group>"; };
 		F4665F8628B824FA00EF7648 /* HapticsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HapticsView.swift; sourceTree = "<group>"; };
+		F4665F8A28B83A5600EF7648 /* TimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerView.swift; sourceTree = "<group>"; };
+		F4665F8C28B83E8A00EF7648 /* SceneView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneView.swift; sourceTree = "<group>"; };
+		F4665F8E28B8409C00EF7648 /* AccessibilityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessibilityView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,8 +61,9 @@
 		F4665F7528B7EFFD00EF7648 /* Flashzilla */ = {
 			isa = PBXGroup;
 			children = (
-				F4665F8828B8393F00EF7648 /* Day86 */,
 				F4665F7628B7EFFD00EF7648 /* FlashzillaApp.swift */,
+				F4665F8828B8393F00EF7648 /* Day86 */,
+				F4665F8928B8397500EF7648 /* Day87 */,
 				F4665F7A28B7EFFF00EF7648 /* Assets.xcassets */,
 				F4665F7C28B7EFFF00EF7648 /* Preview Content */,
 			);
@@ -79,6 +86,16 @@
 				F4665F8628B824FA00EF7648 /* HapticsView.swift */,
 			);
 			path = Day86;
+			sourceTree = "<group>";
+		};
+		F4665F8928B8397500EF7648 /* Day87 */ = {
+			isa = PBXGroup;
+			children = (
+				F4665F8A28B83A5600EF7648 /* TimerView.swift */,
+				F4665F8C28B83E8A00EF7648 /* SceneView.swift */,
+				F4665F8E28B8409C00EF7648 /* AccessibilityView.swift */,
+			);
+			path = Day87;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -151,10 +168,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F4665F8B28B83A5600EF7648 /* TimerView.swift in Sources */,
+				F4665F8F28B8409C00EF7648 /* AccessibilityView.swift in Sources */,
 				F4665F7928B7EFFD00EF7648 /* ContentView.swift in Sources */,
 				F4665F8528B7F98D00EF7648 /* CircleGesture.swift in Sources */,
 				F4665F7728B7EFFD00EF7648 /* FlashzillaApp.swift in Sources */,
 				F4665F8728B824FA00EF7648 /* HapticsView.swift in Sources */,
+				F4665F8D28B83E8A00EF7648 /* SceneView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
