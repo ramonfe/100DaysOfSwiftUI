@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct GesturesView: View {
     @State private var currentAmount = Angle.zero// 0.0
     @State private var finalAmount = Angle.zero// 1.0
     
@@ -50,8 +50,8 @@ struct ContentView: View {
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
+struct GesturesView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        GesturesView()
     }
 }

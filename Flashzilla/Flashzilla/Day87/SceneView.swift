@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct SceneView: View {
+    //to know if your app is active or not
     @Environment(\.scenePhase) var scenePhase
     
     var body: some View {
