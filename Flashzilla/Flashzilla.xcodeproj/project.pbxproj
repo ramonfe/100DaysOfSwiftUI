@@ -18,6 +18,7 @@
 		F4665F8B28B83A5600EF7648 /* TimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4665F8A28B83A5600EF7648 /* TimerView.swift */; };
 		F4665F8D28B83E8A00EF7648 /* SceneView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4665F8C28B83E8A00EF7648 /* SceneView.swift */; };
 		F4665F8F28B8409C00EF7648 /* AccessibilityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4665F8E28B8409C00EF7648 /* AccessibilityView.swift */; };
+		F48679B828BED310002EDACA /* EditCards.swift in Sources */ = {isa = PBXBuildFile; fileRef = F48679B728BED310002EDACA /* EditCards.swift */; };
 		F4BA59DE28BD3D40003D7AC2 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4BA59DD28BD3D40003D7AC2 /* Card.swift */; };
 /* End PBXBuildFile section */
 
@@ -34,6 +35,7 @@
 		F4665F8A28B83A5600EF7648 /* TimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerView.swift; sourceTree = "<group>"; };
 		F4665F8C28B83E8A00EF7648 /* SceneView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneView.swift; sourceTree = "<group>"; };
 		F4665F8E28B8409C00EF7648 /* AccessibilityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessibilityView.swift; sourceTree = "<group>"; };
+		F48679B728BED310002EDACA /* EditCards.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditCards.swift; sourceTree = "<group>"; };
 		F4BA59DD28BD3D40003D7AC2 /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -71,6 +73,7 @@
 				F4337B3328BD474A006459DF /* ContentView.swift */,
 				F4337B3128BD4446006459DF /* CardView.swift */,
 				F4BA59DD28BD3D40003D7AC2 /* Card.swift */,
+				F48679B728BED310002EDACA /* EditCards.swift */,
 				F4665F8828B8393F00EF7648 /* Day86 */,
 				F4665F8928B8397500EF7648 /* Day87 */,
 				F4665F7A28B7EFFF00EF7648 /* Assets.xcassets */,
@@ -181,6 +184,7 @@
 				F4337B3228BD4446006459DF /* CardView.swift in Sources */,
 				F4665F8F28B8409C00EF7648 /* AccessibilityView.swift in Sources */,
 				F4665F7928B7EFFD00EF7648 /* GestureView.swift in Sources */,
+				F48679B828BED310002EDACA /* EditCards.swift in Sources */,
 				F4665F8528B7F98D00EF7648 /* CircleGesture.swift in Sources */,
 				F4665F7728B7EFFD00EF7648 /* FlashzillaApp.swift in Sources */,
 				F4337B3428BD474A006459DF /* ContentView.swift in Sources */,
