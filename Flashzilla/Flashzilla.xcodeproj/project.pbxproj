@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F426608928C16B2F00C7FDF4 /* FileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F426608828C16B2F00C7FDF4 /* FileManager.swift */; };
+		F426608B28C16D9900C7FDF4 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F426608A28C16D9900C7FDF4 /* DataManager.swift */; };
 		F4337B3228BD4446006459DF /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4337B3128BD4446006459DF /* CardView.swift */; };
 		F4337B3428BD474A006459DF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4337B3328BD474A006459DF /* ContentView.swift */; };
 		F4665F7728B7EFFD00EF7648 /* FlashzillaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4665F7628B7EFFD00EF7648 /* FlashzillaApp.swift */; };
@@ -23,6 +25,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F426608828C16B2F00C7FDF4 /* FileManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileManager.swift; sourceTree = "<group>"; };
+		F426608A28C16D9900C7FDF4 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 		F4337B3128BD4446006459DF /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		F4337B3328BD474A006459DF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		F4665F7328B7EFFD00EF7648 /* Flashzilla.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Flashzilla.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -50,6 +54,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F426608728C160EB00C7FDF4 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F4BA59DD28BD3D40003D7AC2 /* Card.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		F4665F6A28B7EFFD00EF7648 = {
 			isa = PBXGroup;
 			children = (
@@ -72,12 +84,14 @@
 				F4665F7628B7EFFD00EF7648 /* FlashzillaApp.swift */,
 				F4337B3328BD474A006459DF /* ContentView.swift */,
 				F4337B3128BD4446006459DF /* CardView.swift */,
-				F4BA59DD28BD3D40003D7AC2 /* Card.swift */,
 				F48679B728BED310002EDACA /* EditCards.swift */,
+				F426608728C160EB00C7FDF4 /* Model */,
 				F4665F8828B8393F00EF7648 /* Day86 */,
 				F4665F8928B8397500EF7648 /* Day87 */,
 				F4665F7A28B7EFFF00EF7648 /* Assets.xcassets */,
 				F4665F7C28B7EFFF00EF7648 /* Preview Content */,
+				F426608828C16B2F00C7FDF4 /* FileManager.swift */,
+				F426608A28C16D9900C7FDF4 /* DataManager.swift */,
 			);
 			path = Flashzilla;
 			sourceTree = "<group>";
@@ -183,6 +197,7 @@
 				F4665F8B28B83A5600EF7648 /* TimerView.swift in Sources */,
 				F4337B3228BD4446006459DF /* CardView.swift in Sources */,
 				F4665F8F28B8409C00EF7648 /* AccessibilityView.swift in Sources */,
+				F426608928C16B2F00C7FDF4 /* FileManager.swift in Sources */,
 				F4665F7928B7EFFD00EF7648 /* GestureView.swift in Sources */,
 				F48679B828BED310002EDACA /* EditCards.swift in Sources */,
 				F4665F8528B7F98D00EF7648 /* CircleGesture.swift in Sources */,
@@ -190,6 +205,7 @@
 				F4337B3428BD474A006459DF /* ContentView.swift in Sources */,
 				F4665F8728B824FA00EF7648 /* HapticsView.swift in Sources */,
 				F4665F8D28B83E8A00EF7648 /* SceneView.swift in Sources */,
+				F426608B28C16D9900C7FDF4 /* DataManager.swift in Sources */,
 				F4BA59DE28BD3D40003D7AC2 /* Card.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
