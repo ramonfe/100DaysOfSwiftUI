@@ -8,17 +8,19 @@
 
 /* Begin PBXBuildFile section */
 		F426609928C1781900C7FDF4 /* LayoutAndGeometryApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F426609828C1781900C7FDF4 /* LayoutAndGeometryApp.swift */; };
-		F426609B28C1781900C7FDF4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F426609A28C1781900C7FDF4 /* ContentView.swift */; };
+		F426609B28C1781900C7FDF4 /* GeomReadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F426609A28C1781900C7FDF4 /* GeomReadView.swift */; };
 		F426609D28C1781B00C7FDF4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F426609C28C1781B00C7FDF4 /* Assets.xcassets */; };
 		F42660A028C1781B00C7FDF4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F426609F28C1781B00C7FDF4 /* Preview Assets.xcassets */; };
+		F486CD8628C281BA00F93314 /* ScrollEfectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F486CD8528C281BA00F93314 /* ScrollEfectView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		F426609528C1781900C7FDF4 /* LayoutAndGeometry.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LayoutAndGeometry.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F426609828C1781900C7FDF4 /* LayoutAndGeometryApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LayoutAndGeometryApp.swift; sourceTree = "<group>"; };
-		F426609A28C1781900C7FDF4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		F426609A28C1781900C7FDF4 /* GeomReadView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeomReadView.swift; sourceTree = "<group>"; };
 		F426609C28C1781B00C7FDF4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F426609F28C1781B00C7FDF4 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		F486CD8528C281BA00F93314 /* ScrollEfectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollEfectView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,7 +54,8 @@
 			isa = PBXGroup;
 			children = (
 				F426609828C1781900C7FDF4 /* LayoutAndGeometryApp.swift */,
-				F426609A28C1781900C7FDF4 /* ContentView.swift */,
+				F426609A28C1781900C7FDF4 /* GeomReadView.swift */,
+				F486CD8528C281BA00F93314 /* ScrollEfectView.swift */,
 				F426609C28C1781B00C7FDF4 /* Assets.xcassets */,
 				F426609E28C1781B00C7FDF4 /* Preview Content */,
 			);
@@ -137,8 +140,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F426609B28C1781900C7FDF4 /* ContentView.swift in Sources */,
+				F426609B28C1781900C7FDF4 /* GeomReadView.swift in Sources */,
 				F426609928C1781900C7FDF4 /* LayoutAndGeometryApp.swift in Sources */,
+				F486CD8628C281BA00F93314 /* ScrollEfectView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
