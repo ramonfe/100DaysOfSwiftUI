@@ -85,13 +85,13 @@
 				F4337B3328BD474A006459DF /* ContentView.swift */,
 				F4337B3128BD4446006459DF /* CardView.swift */,
 				F48679B728BED310002EDACA /* EditCards.swift */,
+				F426608A28C16D9900C7FDF4 /* DataManager.swift */,
+				F426608828C16B2F00C7FDF4 /* FileManager.swift */,
 				F426608728C160EB00C7FDF4 /* Model */,
 				F4665F8828B8393F00EF7648 /* Day86 */,
 				F4665F8928B8397500EF7648 /* Day87 */,
 				F4665F7A28B7EFFF00EF7648 /* Assets.xcassets */,
 				F4665F7C28B7EFFF00EF7648 /* Preview Content */,
-				F426608828C16B2F00C7FDF4 /* FileManager.swift */,
-				F426608A28C16D9900C7FDF4 /* DataManager.swift */,
 			);
 			path = Flashzilla;
 			sourceTree = "<group>";
