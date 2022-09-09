@@ -18,6 +18,12 @@ struct SkiDetailsView: View {
                 Text("\(resort.elevation)m")
                     .font(.title3)
             }
+            VStack{
+                Text("Show")
+                    .font(.caption.bold())
+                Text("\(resort.snowDepth)cm")
+                    .font(.title3)
+            }
         }
         .frame(maxWidth: .infinity)
     }
