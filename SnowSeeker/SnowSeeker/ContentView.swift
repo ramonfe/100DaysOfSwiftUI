@@ -77,7 +77,7 @@ struct ContentView: View {
                 Button("Sort Alphabetical"){
                     sortedBy = .alphabetical
                 }
-                Button("Sort by country"){
+                Button("Sort by Country"){
                     sortedBy = .country
                 }
             }
