@@ -17,11 +17,17 @@ extension View{
     }
 }
 
+enum sorted{
+    case none, alphabetical, country
+}
+
 struct ContentView: View {
-    let resorts: [Resort] = Bundle.main.decode("resorts.json")
+    var resorts: [Resort] = Bundle.main.decode("resorts.json")
     
     @StateObject var favorites = Favorites()
     @State private var searchText = ""
+    @State private var showSort = false
+    @State private var sortedBy = sorted.none
     
     var body: some View {
         NavigationView{
@@ -58,6 +64,23 @@ struct ContentView: View {
             }
             .navigationTitle("Resorts")
             .searchable(text: $searchText, prompt: "Search for a resort")
+            .toolbar {
+                ToolbarItem{
+                    Button{
+                        showSort.toggle()
+                    }label: {
+                        Label("Sort", systemImage: "arrow.up.arrow.down.square")
+                    }
+                }
+            }
+            .confirmationDialog("Sort by", isPresented: $showSort) {
+                Button("Sort Alphabetical"){
+                    sortedBy = .alphabetical
+                }
+                Button("Sort by country"){
+                    sortedBy = .country
+                }
+            }
             
             WelcomeView()
         }
@@ -66,11 +89,25 @@ struct ContentView: View {
     }
     
     var filteredResorts: [Resort]{
+        var resortRet: [Resort]
         if searchText.isEmpty{
-            return resorts
+            resortRet = resorts
         } else{
-            return resorts.filter{ $0.name.localizedCaseInsensitiveContains(searchText) }
+            resortRet = resorts.filter{ $0.name.localizedCaseInsensitiveContains(searchText) }
         }
+        switch sortedBy{
+            case .country:
+                return resortRet.sorted { lhs, rhs in
+                    lhs.country < rhs.country
+                }
+            case .alphabetical:
+                return resortRet.sorted { lhs, rhs in
+                    lhs.name < rhs.name
+                }
+            case .none:
+                return resortRet
+        }
+        
     }
 }
 
