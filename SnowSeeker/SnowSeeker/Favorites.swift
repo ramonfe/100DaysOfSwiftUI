@@ -11,9 +11,17 @@ import Foundation
 class Favorites: ObservableObject{
     private var resorts: Set<String>
     private let saveKey = "Favorites"
+    private let pathFile = FileManager.documentDirectory.appendingPathComponent("SavedFavs")
     
     init(){
         //load to save data
+        if let savedFavs = UserDefaults.standard.data(forKey: "Favs"){
+           
+                resorts = Set(savedFavs.map(String.init))
+                print("init executed")
+            
+        }
+        
         resorts = []
     }
     
@@ -34,6 +42,14 @@ class Favorites: ObservableObject{
     }
     
     func save(){
-        //save data
+        let strChain = resorts.joined(separator: ",")
+            
+        UserDefaults.standard.set(strChain, forKey: "Favs")
+//        if let strChain = resorts.joined(separator: ","){
+//            UserDefaults.standard.set(strChain, forKey: "Favs")
+//        } else{
+//            print("not decodified")
+//        }
+        
     }
 }
